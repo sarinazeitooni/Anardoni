@@ -1,0 +1,22 @@
+.about-container{
+  .about{
+    .info-title{
+      width: 100px;
+      margin-left: 20px;
+      text-align: left;
+    }
+    .info-items{
+      width: 50%;
+      white-space: nowrap;
+      text-align: right;
+    }
+    margin: 5px;
+    width: 240px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  margin-right: 55px;
+  display: flex;
+  flex-direction: column;
+}

@@ -19,7 +19,7 @@ function SecondSwipper(){
         },1000);
     },[swipperDataForTimeOut])
 
-    let viewport = isMobile ? 2 : 8;
+    let viewport = isMobile ? 2 : 7;
     return (
         <div className={style.secondSwipperContainer}>
             <div className={style.swipperTitle}>

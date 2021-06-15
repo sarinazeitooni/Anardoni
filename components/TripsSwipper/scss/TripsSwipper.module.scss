@@ -5,6 +5,8 @@
   height: fit-content;
   border-radius: 12px;
   padding: 25px;
+  text-align: right;
+  color: white;
   width: 57%;
   margin: 46px auto 0 auto;
   .swipperTitle{
@@ -31,5 +33,10 @@
       width: 86%;
       border-bottom: 1px solid white;
     }
+  }
+  img{
+    border-radius: 22.5%;
+    width: 125px;
+    height: 125px;
   }
 }
