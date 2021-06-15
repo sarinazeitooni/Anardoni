@@ -1,0 +1,56 @@
+.whatsNewContainer{
+  @media screen and (max-width: 425px) {
+    .rightText{
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    .aboutItems{
+      width: 145%;
+      white-space: pre-wrap;
+      font-size: 10px;
+    }
+    font-size: 13px;
+  }
+
+  .previewTitle{
+    font-weight: bolder;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 15.5px;
+  }
+  .rightText{
+    color: #6c757d;
+  }
+  .aboutItems{
+    list-style-type: none;
+    padding-bottom: 15px;
+    font-size: .95em;
+    display: block;
+  }
+  .versions{
+    width: 50%;
+    text-align: left;
+    .version{
+      color: #6c757d;
+      font-size: .8em;
+    }
+    .coloredText{
+      white-space: nowrap;
+      color: #375a7f;
+      cursor: pointer;
+      margin-bottom: 18px;
+      font-size: .8em;
+    }
+  }
+  .newItems{
+    width: 50%;
+    text-align: right;
+  }
+  font-family: anardoni;
+  border-bottom: 1px solid #444;
+  color: white;
+  margin: 20px auto 15px auto;
+  width: 57.5%;
+  display: flex;
+  flex-direction: row-reverse;
+}

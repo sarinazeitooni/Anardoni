@@ -41,7 +41,7 @@
   background-color: #222222;
   display: grid;
   height: 50px;
-  padding: 0 15.5% 0 15%;
+  padding: 0 21.5% 0 20.6%;
   div{
     .rightBtn{
       border-top-left-radius: 0;
@@ -81,13 +81,14 @@
         opacity: 1;
         border-bottom: 3px solid #375a7f;
       }
+      letter-spacing: -1.5px;
       opacity: .8;
       transition: .3s all;
       cursor: pointer;
       list-style-type: none;
       float: right;
-      padding: 12px 10px 10px 10px;
-      font-size: 16px;
+      padding: 12px 12px 10px 12px;
+      font-size: 17px;
       color: #888;
       svg{
         font-size: 27px;

@@ -1,0 +1,65 @@
+.cardInfo{
+  width: 57.5%;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: row-reverse;
+  border-bottom: 1px solid #444;
+  .cardInfoName{
+    text-align: right;
+    font-family: anardoni;
+    margin-top: 15px;
+    position: relative;
+    .getButton{
+      top: 73%;
+      position: absolute;
+      right: 0;
+      color: white;
+      background-color: #375a7f;
+      border-radius: 20px;
+      padding: .2em 1.16em;
+      font-size: 15px;
+      font-weight: 200;
+      width: fit-content;
+      margin: 10px
+    }
+    h4{
+      font-size: .9em;
+      font-weight: 200;
+      letter-spacing: 0.01em;
+      color: #6c757d;
+      margin: 6px 0 0 0;
+    }
+    h2{
+      font-size: 23px !important;
+      display: inline;
+      color: white;
+    }
+    :nth-child(4){
+      margin: 2px 0;
+      font-weight: normal;
+      color: #007bff;
+    }
+    .rate{
+      display: inline-block;
+      margin-right: 2.5px;
+      border: 1px solid rgb(142, 142, 147);
+      font-size: 10.4px;
+      font-weight: 500;
+      vertical-align: super;
+      border-radius: 3px;
+      color: rgb(142, 142, 147);
+      text-align: center;
+      white-space: nowrap;
+      padding: 0 3px;
+    }
+  }
+  .cardInfoPic{
+    margin: 0 0 0 20px;
+    img{
+      border-radius: 22.5%;
+      width: 230px;
+      height: 230px;
+    }
+  }
+}

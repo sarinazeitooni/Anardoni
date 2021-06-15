@@ -60,9 +60,7 @@ let cardData = [
         ]
 
     }
-
     ,
-
     {
         id: 1,
         containerImage: images.secondImage,

@@ -1,0 +1,62 @@
+.line{
+  width: 57.5%;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 1px solid #444;
+}
+.preview{
+  font-family: anardoni;
+  text-align: right;
+  color: white;
+  margin-top: 10px;
+  width: 57.5%;
+  margin-right: auto;
+  margin-left: auto;
+  .aboutItemsContainer{
+    .itemContainer{
+      margin: 5px;
+      li{
+        list-style-type: none;
+      }
+    }
+    #moreMask{
+      padding: 10px;
+      color: gray;
+      width: 100%;
+      height: 10px;
+      overflow: hidden;
+      .aboutItems{
+        padding-bottom: 15px;
+        display: block;
+        list-style-type: none;
+      }
+    }
+    .buttonContainer{
+      .toggleBtn{
+        color: #375a7f;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        font-family: anardoni;
+        font-size: .9rem;
+        :focus {
+          outline: none !important;
+        }
+      }
+      text-align: left;
+      width: 100%;
+    }
+    .descriptionItems{
+      padding-bottom: 15px;
+      display: block;
+      list-style-type: none;
+    }
+    margin-bottom: 5px;
+  }
+  .previewTitle{
+    font-weight: bolder;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 15px;
+  }
+}

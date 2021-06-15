@@ -3,20 +3,22 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import Card from "../card/Card";
 import Link from 'next/link';
 import cardData from "../../data/CardData";
-import { BrowserView, MobileView} from "react-device-detect";
+import { BrowserView, MobileView,isMobile} from "react-device-detect";
 import style from './scss/FirstSwipper.module.scss';
-import {useRouter} from "next/router";
 const FirstSwipper = () => {
     let data = cardData;
-    const router=useRouter()
+    let viewportslide = isMobile ? 1 : 3;
+    let viewportspace = isMobile ? 0 : 1;
     return (
         <div className={style.swipperContainer} >
-            <BrowserView>
                 <div className={style.line}></div>
-                <Swiper spaceBetween={1} slidesPerView={3}>
+                <Swiper spaceBetween={viewportspace} slidesPerView={viewportslide}>
                     {data.map((card) =>
                         <SwiperSlide>
-                        <Link href={"www.google.com"}>
+                        <Link href={{
+                            pathname : '/cards/[id]',
+                            query : {id : card.id}
+                        }}>
                             <a>
                             <Card id={card.id} title={card.title} subTitle={card.subTitle}
                                   detailImage={card.detailImage} containerImage={card.containerImage}/>
@@ -24,20 +26,7 @@ const FirstSwipper = () => {
                         </Link>
                         </SwiperSlide>
                     )}
-
                 </Swiper>
-            </BrowserView>
-            <MobileView>
-                <div className={style.line}></div>
-                <Swiper spaceBetween={0} slidesPerView={1}>
-                    {data.map((card) => <SwiperSlide>
-                        <Link to={"/" + card.id}>
-                            <Card id={card.id} title={card.title} subTitle={card.subTitle}
-                                  detailImage={card.detailImage} containerImage={card.containerImage}/>
-                        </Link>
-                    </SwiperSlide>)}
-                </Swiper>
-            </MobileView>
         </div>
     )
 };
