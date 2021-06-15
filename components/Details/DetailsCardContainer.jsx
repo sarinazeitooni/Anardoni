@@ -6,7 +6,7 @@ import DetailCardNewItems from "./items/DetailCardNewItems";
 import DetailCardDescription from "./items/DetailCardDescription";
 import DetailAdImage from "./items/DetailAdImage";
 import DetailCardLink from "./items/DetailCardLink";
-const DetailsContainer = (card)=>{
+const DetailsContainer = ({card})=>{
     return(
         <fragment>
             <DetailMainImage item={card}/>

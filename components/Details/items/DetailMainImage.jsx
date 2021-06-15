@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './scss/DetailsMainImage.module.scss';
 const DetailMainImage = ({item}) => {
+    console.log(item,'item')
     return (
         <fragment>
             <div className={style.detailMainImageContainer}>
