@@ -3,14 +3,19 @@ import Navigation from "./navigation/Navigation";
 import FirstSwipper from "./FirstSwipper/FirstSwipper";
 import TripsSwipper from "./TripsSwipper/TripsSwipper";
 import { Provider } from "react-redux";
+import {BrowserView , isMobile} from 'react-device-detect';
+import MainMobile from "./MainMobile";
 import store from '../redux/store/store';
 function Main(){
     return(
      <div>
          <Provider store={store}>
-             <Navigation/>
-             <FirstSwipper/>
-             <TripsSwipper/>
+             <BrowserView>
+                 <Navigation/>
+                 <FirstSwipper/>
+                 <TripsSwipper/>
+             </BrowserView>
+             {isMobile && <MainMobile/>}
          </Provider>
      </div>
     )

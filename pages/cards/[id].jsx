@@ -8,13 +8,6 @@ import store from "../../redux/store/store";
 function Details(){
     const router = useRouter();
     const { id } = router.query;
-
-    // let card;
-    // useEffect(()=>{
-    //      card = cardData[id];
-    // },[id]);
-    console.log(cardData[id]);
-
     return(
         <Provider store={store}>
             <Navigation/>

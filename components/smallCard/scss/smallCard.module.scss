@@ -1,9 +1,9 @@
-.cardWithoutContainerContainer{
+.card-without-container-container{
   padding: 10px;
   border-radius: 1.2em;
   overflow: hidden;
   width: fit-content;
-  .cardWithoutContainerImage{
+  .card-without-container-image{
     img{
       border-radius:22%;
     }
@@ -11,11 +11,12 @@
     height: 120px;
     margin-right: 10px;
   }
-  .cardWithoutContainerDetail{
+  .card-without-container-detail{
     h4{
       font-weight: normal;
     }
     p{
+      font-size: 12px;
       margin: -15px 0 0 0;
       color: #6c757d;
     }

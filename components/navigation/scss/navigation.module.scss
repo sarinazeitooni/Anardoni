@@ -4,30 +4,15 @@
   url("../../../fonts/iranyekan/woff/iranyekanwebregularfanum.woff") format("woff"),
   url("../../../fonts/iranyekan/ttf/iranyekanwebregularfanum.ttf") format("truetype");
 }
-@media screen and (max-width: 425px) {
-  .logInContainer{
-    .blackCircle{
-      display: none;
-    }
-    display: none;
-  }
-  .itemContainer{
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-.logInContainer{
+.log-in-container{
   display: flex;
   flex-direction: row-reverse;
   position: absolute;
   top: 6px;
-  .blackCircle{
+  .black-circle{
     z-index: 2;
     top: 12px;
-    right:90px;
+    right:86px;
     width: 13px;
     height: 13px;
     background-color: black;
@@ -35,34 +20,47 @@
     border-radius: 50%;
   }
 }
-.navigationContainer{
+.navigation-container{
   border-bottom: 1px solid #444;
   font-family: anardoni;
   background-color: #222222;
   display: grid;
   height: 50px;
   padding: 0 21.5% 0 20.6%;
+  li{
+    list-style-type: none;
+  }
   div{
-    .rightBtn{
+    .right-btn{
+      svg{
+        right: 12px;
+      }
+      letter-spacing: -1.5px;
+      padding: 8px 38px 8px 12px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
-    .leftBtn{
+    .left-btn{
+      svg{
+        left: 12px;
+      }
+      padding: 8px 12px 8px 38px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
     button{
       font-family: anardoni;
-      padding: 6px 10px;
       position: relative;
       cursor: pointer;
-      margin-left:3px;
+      margin-left:2px;
       background-color: #375A7F;
       border-radius: .25rem;
       border: none;
       color: white;
       font-size: 16px;
       svg{
+        top: 10px;
+        position: absolute;
         font-size: 18px;
       }
     }
@@ -72,7 +70,7 @@
     border-bottom: 3px solid #375a7f;
     color: #375a7f !important;
   }
-  .itemContainer{
+  .item-container{
     margin: 0;
     color: #888888;
     display: inline-block;

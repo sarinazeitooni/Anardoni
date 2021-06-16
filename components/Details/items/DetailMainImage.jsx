@@ -1,16 +1,15 @@
 import React from 'react';
 import style from './scss/DetailsMainImage.module.scss';
 const DetailMainImage = ({item}) => {
-    console.log(item,'item')
     return (
         <fragment>
-            <div className={style.detailMainImageContainer}>
-                <div className={style.darkerBack}></div>
-                <div className={style.blurredImage}
+            <div className={style['detail-main-image-container']}>
+                <div className={style['darker-back']}></div>
+                <div className={style['blurred-image']}
                      style={{ backgroundImage: `url(
                       ${item.containerImage}
                      )` }}></div>
-                <div className={style.detailMainImage}
+                <div className={style['detail-main-image']}
                      style={{ backgroundImage: `url(
                       ${item.containerImage}
                      ) ` }}

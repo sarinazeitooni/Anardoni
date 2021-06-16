@@ -1,10 +1,10 @@
-.whatsNewContainer{
+.whats-new-container{
   @media screen and (max-width: 425px) {
-    .rightText{
+    .right-text{
       margin-bottom: 10px;
       font-size: 15px;
     }
-    .aboutItems{
+    .about-items{
       width: 145%;
       white-space: pre-wrap;
       font-size: 10px;
@@ -12,16 +12,16 @@
     font-size: 13px;
   }
 
-  .previewTitle{
+  .preview-title{
     font-weight: bolder;
     margin-bottom: 15px;
     display: inline-block;
     font-size: 15.5px;
   }
-  .rightText{
+  .right-text{
     color: #6c757d;
   }
-  .aboutItems{
+  .about-items{
     list-style-type: none;
     padding-bottom: 15px;
     font-size: .95em;
@@ -34,7 +34,7 @@
       color: #6c757d;
       font-size: .8em;
     }
-    .coloredText{
+    .colored-text{
       white-space: nowrap;
       color: #375a7f;
       cursor: pointer;
@@ -42,15 +42,19 @@
       font-size: .8em;
     }
   }
-  .newItems{
+  .new-items{
     width: 50%;
     text-align: right;
   }
   font-family: anardoni;
   border-bottom: 1px solid #444;
   color: white;
-  margin: 20px auto 15px auto;
+  margin: 25px auto 15px auto;
+  padding-bottom: 20px;
   width: 57.5%;
   display: flex;
   flex-direction: row-reverse;
+}
+.last-update-container{
+  font-size: 10px;
 }

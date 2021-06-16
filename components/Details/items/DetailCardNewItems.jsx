@@ -1,38 +1,34 @@
 import {MobileView, BrowserView} from 'react-device-detect';
 import style from './scss/DetailCardNewItems.module.scss';
+import messages from "./messages/messages";
 const DetailCardNewItems = ({item})=>{
     const data = item.newItems;
     return(
         <div>
-            <div className={style.whatsNewContainer}>
-                <div className={style.newItems}>
-                    <div className={style.previewTitle}>جدید چه خبره؟</div>
-                    <div className={style.aboutItemsContainer}>
-                        {/*{*/}
-                        {/*    data.map((item) => {*/}
-                        {/*        return (*/}
-                        {/*            <li className={style.aboutItems}>*/}
-                        {/*                {item}*/}
-                        {/*            </li>*/}
-                        {/*        )*/}
-                        {/*    })*/}
-                        {/*}*/}
+            <div className={style['whats-new-container']}>
+                <div className={style['new-items']}>
+                    <div className={style['preview-title']}>{messages.whatsNew}</div>
+                    <div className={style['about-items-container']}>
+                        {
+                            data.map((item) => {
+                                return (
+                                    <li className={style['about-items']}>{item} </li>
+                                )
+                            })
+                        }
                     </div>
                     <MobileView>
-                        <div className={style.rightText}>
-                            نسخه  {item.version}
+                        <div className={style['right-text']}>{messages.version}{item.version}
                         </div>
                     </MobileView>
                 </div>
                 <div className={style.versions}>
-                    <div className={style.coloredText}>
-                        نمایش تاریخچه ورژن ها
-                    </div>
+                    <div className={style['colored-text']}>{messages.versionHistory}</div>
                     <BrowserView>
-                        <div className={style.version}> نسخه {item.version}</div>
+                        <div className={style.version}> {messages.version} {item.version}</div>
                     </BrowserView>
                     <MobileView>
-                        <div style={{fontSize:"10px"}}>
+                        <div className={style['last-update-container']}>
                             {item.lastUpdate}
                         </div>
                     </MobileView>

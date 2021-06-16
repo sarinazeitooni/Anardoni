@@ -1,0 +1,25 @@
+.navigation-mobile-container{
+  z-index: 10;
+  border-top: 1px solid #444;
+  background-color: #222222;
+  font-family: anardoni;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  .item-mobile-container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    color: #888888;
+    .mobile-item{
+      svg{
+        margin: 0 auto;
+      }
+      font-size: 12px;
+      padding:3px  19px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}

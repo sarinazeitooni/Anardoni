@@ -10,6 +10,7 @@ let cardData = [
         caption: "این برنامه در اناردونی برای دیوایس‌های iOS در دسترس است",
         seller: "امید آقاخانی",
         version: "419",
+        links: ['معرفی و دانلود'],
         previewImages: {
             firstPic: require("../images/firstPic.webp"),
             secondPic: "../images/secondPic.webp",
@@ -71,6 +72,7 @@ let cardData = [
         caption: "این برنامه در اناردونی برای دیوایس‌های iOS در دسترس است",
         seller: "آریا رسانه تدبیر (شاتل)",
         version: "2.0.0.744",
+        links: ['معرفی و دانلود'],
         previewImages: {
             firstPic: "../images/firstPic.webp",
             secondPic: "../images/secondPic.webp",
@@ -138,6 +140,7 @@ let cardData = [
         caption: "این برنامه در اناردونی برای دیوایس‌های iOS در دسترس است",
         seller: "آوازه نو پوشان پارسی",
         version: "2.3.1",
+        links: ['وب اپلیکیشن'],
         previewImages: {
             firstPic: "../images/firstPic.webp",
             secondPic: "../images/secondPic.webp",

@@ -6,6 +6,7 @@ import DetailCardNewItems from "./items/DetailCardNewItems";
 import DetailCardDescription from "./items/DetailCardDescription";
 import DetailAdImage from "./items/DetailAdImage";
 import DetailCardLink from "./items/DetailCardLink";
+import DetailCardInformation from "./items/DetailCardInformation";
 const DetailsContainer = ({card})=>{
     return(
         <fragment>
@@ -15,7 +16,8 @@ const DetailsContainer = ({card})=>{
             <DetailCardNewItems item={card}/>
             <DetailCardDescription item={card}/>
             <DetailAdImage/>
-            <DetailCardLink/>
+            <DetailCardLink item={card}/>
+            <DetailCardInformation item={card}/>
         </fragment>
     )
 };

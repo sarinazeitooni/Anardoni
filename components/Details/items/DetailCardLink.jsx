@@ -1,11 +1,22 @@
 import React from 'react';
-import style from './scss/DetailCardLink.module.scss'
-function DetailCardLink(){
+import style from './scss/DetailCardLink.module.scss';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import messages from "./messages/messages";
+function DetailCardLink({item}){
     return(
-        <div className={style.LinkContainer}>
-            <h3 className={style.linkTitle}>لینک های مفید</h3>
-            <div className={style.Link}>وب اپلیکیشن   <span> > </span>   </div>
+        <div className={style['link-container']}>
+            {
+                item.links.map((link)=>{
+                    return(
+                        <div>
+                            <h3 className={style['link-title']}>{messages.linkTitle}</h3>
+                            <div className={style.link}><span> <ArrowBackIosIcon/> </span> {link}</div>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
+
 };
 export default DetailCardLink;

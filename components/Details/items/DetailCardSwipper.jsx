@@ -1,15 +1,14 @@
-import ThirdSwipperData from "../../../data/ThirdSwipperData";
 import ThirdSwipper from "../../thirdSwipper/ThirdSwipper";
-import style from './scss/DetailCardSwipper.module.scss'
+import style from './scss/DetailCardSwipper.module.scss';
+import messages from "./messages/messages";
 const DetailCardSwipper = ()=>{
-    let data = ThirdSwipperData;
     return(
         <div>
             <div className={style.preview}>
-                <span className={style.previewTitle}>پیش نمایش</span>
+                <span className={style['preview-title']}>{messages.swipperTitle}</span>
                 <ThirdSwipper/>
             </div>
-            <div className={style.line}></div>
+            <div className='line'></div>
         </div>
     )
 }

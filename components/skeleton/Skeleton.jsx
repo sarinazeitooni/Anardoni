@@ -1,5 +1,6 @@
 import React from 'react';
 import { Skeleton } from '@material-ui/lab';
+import style from './scss/skeleton.module.scss'
 const MySkeleton=(props)=>{
     let slidenum = [] ;
     for (let index = 1; index < props.slides; index++) {
@@ -8,7 +9,7 @@ const MySkeleton=(props)=>{
     return(
         slidenum.map((slide)=>{
             return(
-                <div style={{display: "inline-block" , margin : "6px"}}>
+                <div className={style['skeleton-container']}>
                     <Skeleton animation="wave" variant="circle" width={100} height={100} />
                     <br/>
                     <Skeleton animation="wave" variant="text" width={100} height={20} />

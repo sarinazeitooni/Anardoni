@@ -1,20 +1,19 @@
 import React from 'react';
-import style from './scss/DetailCardInformation.module.scss'
+import style from './scss/DetailCardInformation.module.scss';
+import messages from "./messages/messages";
+import {MobileView} from 'react-device-detect';
 function DetailCardInformation({item}){
     return(
-    return(
         <div>
-            <div className="preview">
-                <span className='preview-title'>
-                    اطلاعات
-                </span>
-                <div className="about-container">
+            <div className={style.preview}>
+                <span className={style['preview-title']}>{messages.information}</span>
+                <div className={style['about-container']}>
                     {item.information.map((item)=>{
                         return(
                             <div>
-                                <div className='about'>
-                                    <div className='info-title'>{item.Title}</div>
-                                    <span className='info-items'style={{color:item.color}}>{item.description}</span>
+                                <div className={style.about}>
+                                    <div className={style['info-title']}>{item.Title}</div>
+                                    <span className={style['info-items']}style={{color:item.color}}>{item.description}</span>
                                 </div>
                                 <MobileView><div className='line'></div></MobileView>
                             </div>
@@ -23,7 +22,6 @@ function DetailCardInformation({item}){
                 </div>
             </div>
         </div>
-    )
     )
 };
 export default DetailCardInformation

@@ -12,27 +12,28 @@
   width: 57.5%;
   margin-right: auto;
   margin-left: auto;
-  .aboutItemsContainer{
-    .itemContainer{
+  .about-items-container{
+    .item-container{
       margin: 5px;
+      overflow: hidden;
       li{
         list-style-type: none;
       }
     }
-    #moreMask{
+    #more-mask{
       padding: 10px;
       color: gray;
       width: 100%;
       height: 10px;
       overflow: hidden;
-      .aboutItems{
+      .about-items{
         padding-bottom: 15px;
         display: block;
         list-style-type: none;
       }
     }
-    .buttonContainer{
-      .toggleBtn{
+    .button-container{
+      .toggle-btn{
         color: #375a7f;
         background-color: transparent;
         cursor: pointer;
@@ -46,14 +47,14 @@
       text-align: left;
       width: 100%;
     }
-    .descriptionItems{
+    .description-items{
       padding-bottom: 15px;
       display: block;
       list-style-type: none;
     }
     margin-bottom: 5px;
   }
-  .previewTitle{
+  .preview-title{
     font-weight: bolder;
     margin-bottom: 15px;
     display: inline-block;

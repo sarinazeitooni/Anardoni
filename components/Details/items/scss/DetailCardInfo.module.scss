@@ -1,16 +1,16 @@
-.cardInfo{
+.card-info{
   width: 57.5%;
   margin: 0 auto;
   display: flex;
   padding-bottom: 20px;
   flex-direction: row-reverse;
   border-bottom: 1px solid #444;
-  .cardInfoName{
+  .card-info-name{
     text-align: right;
     font-family: anardoni;
     margin-top: 15px;
     position: relative;
-    .getButton{
+    .get-button{
       top: 73%;
       position: absolute;
       right: 0;
@@ -54,7 +54,7 @@
       padding: 0 3px;
     }
   }
-  .cardInfoPic{
+  .card-info-pic{
     margin: 0 0 0 20px;
     img{
       border-radius: 22.5%;

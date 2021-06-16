@@ -3,16 +3,12 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import Card from "../card/Card";
 import Link from 'next/link';
 import cardData from "../../data/CardData";
-import { BrowserView, MobileView,isMobile} from "react-device-detect";
 import style from './scss/FirstSwipper.module.scss';
 const FirstSwipper = () => {
     let data = cardData;
-    let viewportslide = isMobile ? 1 : 3;
-    let viewportspace = isMobile ? 0 : 1;
     return (
-        <div className={style.swipperContainer} >
-                <div className={style.line}></div>
-                <Swiper spaceBetween={viewportspace} slidesPerView={viewportslide}>
+        <div className={style['swipper-container']}>
+                <Swiper spaceBetween={1} slidesPerView={3}>
                     {data.map((card) =>
                         <SwiperSlide>
                         <Link href={{
