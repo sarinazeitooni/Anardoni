@@ -1,0 +1,59 @@
+.preview{
+  font-family: anardoni;
+  text-align: right;
+  color: white;
+  margin: 15px;
+  .about-items-container{
+    .item-container{
+      margin: 5px;
+      overflow: hidden;
+      li{
+        list-style-type: none;
+      }
+    }
+    #more-mask{
+      padding: 10px;
+      color: gray;
+      width: 100%;
+      height: 10px;
+      overflow: hidden;
+      .about-items{
+        padding-bottom: 15px;
+        display: block;
+        list-style-type: none;
+      }
+    }
+    .button-container{
+      .toggle-btn{
+        color: #375a7f;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        font-family: anardoni;
+        font-size: .9rem;
+        :focus {
+          outline: none !important;
+        }
+      }
+      text-align: left;
+      width: 100%;
+    }
+    .description-items{
+      line-height: 26px;
+      display: block;
+      font-size: 14px;
+      list-style-type: none;
+    }
+    margin-bottom: 5px;
+    direction: rtl;
+  }
+  .preview-title{
+    display: inline-block;
+    font-size: 15.5px;
+    padding-bottom: 10px;
+  }
+}
+.ad{
+  width: 90%;
+  margin: 0 15px;
+}

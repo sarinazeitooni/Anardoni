@@ -4,7 +4,7 @@ const messages ={
     linkTitle : 'لینک های مفید',
     whatsNew : 'جدید چه خبره؟',
     swipperTitle : 'پیش نمایش',
-    version : 'نسخه',
+    version : ' نسخه ',
     versionHistory : 'نمایش تاریخچه ورژن ها',
     more: 'بیشتر',
     close : 'بستن',
