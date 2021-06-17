@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import style from './scss/TripsSwipper.module.scss';
 import messages from "./messages/messages";
-import {isMobile} from "react-device-detect";
 import { useSelector , useDispatch } from "react-redux";
 import MySkeleton from "../skeleton/Skeleton";
 import SmallCardContainer from "../smallCard/SmallCardContainer";
@@ -18,17 +17,15 @@ function SecondSwipper(){
 
         },1000);
     },[swipperDataForTimeOut])
-    let viewport = isMobile ? 2 : 7;
-    let skeleton = isMobile ? 2 : 10;
     return (
         <div className={style['second-swipper-container']}>
             <div className={style['swipper-title']}>
                 <div className={style['right-title']}>{messages.trips}</div>
                 <div className={style['left-title']}>{messages.more}</div>
             </div>
-                <Swiper spaceBetween={0} slidesPerView={viewport}>
+                <Swiper spaceBetween={0} slidesPerView={7}>
                     {!swipperData && (
-                        <MySkeleton slides={skeleton}/>
+                        <MySkeleton slides={10}/>
                     )}
                     {swipperData && (swipperData.map((item)=>{
                         return(

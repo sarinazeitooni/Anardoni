@@ -2,11 +2,13 @@ import React from 'react';
 import style from './scss/DetailCardLink.module.scss';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import messages from "./messages/messages";
+import _ from "lodash";
 function DetailCardLink({item}){
+    const links = _.get(item, "links",['']);
     return(
         <div className={style['link-container']}>
             {
-                item.links.map((link)=>{
+                links.map((link)=>{
                     return(
                         <div>
                             <h3 className={style['link-title']}>{messages.linkTitle}</h3>

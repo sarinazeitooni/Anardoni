@@ -1,0 +1,70 @@
+.mobile-card-info{
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 25px 20px;
+  font-family: anardoni;
+  .mobile-card-info-pic{
+    img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .mobile-card-info-name{
+    direction: rtl;
+    margin: 5PX 25px;
+    h2,h4{
+      margin: 0;
+    }
+    h2{
+      font-size: 16px;
+    }
+    h4{
+      color: #6c757d;
+      font-size: 13px;
+      font-weight: 200;
+      margin: 4px 0;
+    }
+    .rate{
+
+    }
+    .mobile-get-button{
+        margin: 20px 0px;
+        color: white;
+      font-size: 14px;
+        font-weight: 200;
+        width: fit-content;
+        background-color: #375a7f;
+        border-radius: 20px;
+        padding: 3px 13px;
+    }
+  }
+}
+.feedback-container{
+  font-family: anardoni;
+  color: #6c757d;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px;
+  direction: rtl;
+  .rate{
+    div{
+      font-size: 20px;
+      &:nth-child(2){
+        font-size: 13px;
+      }
+    }
+    width: 50%;
+    text-align: left;
+  }
+  .feedback{
+    div{
+      font-size: 20px;
+      &:nth-child(2){
+        font-size: 13px;
+      }
+    }
+    width: 50%;
+    text-align: right;
+  }
+}

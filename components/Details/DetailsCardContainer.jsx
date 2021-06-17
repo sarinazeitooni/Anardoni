@@ -9,7 +9,7 @@ import DetailCardLink from "./items/DetailCardLink";
 import DetailCardInformation from "./items/DetailCardInformation";
 const DetailsContainer = ({card})=>{
     return(
-        <fragment>
+        <React.Fragment>
             <DetailMainImage item={card}/>
             <DetailCardInfo item={card}/>
             <DetailCardSwipper/>
@@ -18,7 +18,7 @@ const DetailsContainer = ({card})=>{
             <DetailAdImage/>
             <DetailCardLink item={card}/>
             <DetailCardInformation item={card}/>
-        </fragment>
+        </React.Fragment>
     )
 };
 export default DetailsContainer;

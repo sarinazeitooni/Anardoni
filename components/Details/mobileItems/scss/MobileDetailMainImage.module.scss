@@ -1,0 +1,32 @@
+.detail-main-image-mobile-container{
+width: 600px;
+}
+.detail-main-image-mobile{
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+}
+html[data-scroll="10"] .back-button {
+  background-color: #eee;
+}
+.scrolled{
+  color: red !important;
+}
+.back-button {
+  color: #375a7f;
+  font-family: anardoni;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #222222;
+  padding: 10px;
+  span{
+    margin: 0 15px;
+  }
+  svg{
+    position: absolute;
+    top: 9px;
+    left: 10px;
+  }
+}

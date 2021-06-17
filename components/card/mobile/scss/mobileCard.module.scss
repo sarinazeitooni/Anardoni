@@ -1,22 +1,27 @@
 .mobile-card-container{
   color: white;
   font-family: anardoni;
-  width: 95%;
+  width: 88%;
   margin: 0 auto;
   .titles-container{
     text-align: right;
     display: flex;
     flex-direction: row-reverse;
     .titles{
-      width: 72%;
+      direction: rtl;
+      margin: 0 6px;
+      width: 66.5%;
       .title{
         font-size: 13.5px;
       }
       .subtitle{
         color: #6c757d;
         font-size: 12px;
-        height: 25px;
+        padding: 3px 0;
+        white-space: nowrap;
         overflow: hidden;
+        text-overflow: ellipsis;
+        width: 155px;
       }
     }
     .get-button{

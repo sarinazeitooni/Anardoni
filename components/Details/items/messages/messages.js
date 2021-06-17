@@ -8,6 +8,10 @@ const messages ={
     versionHistory : 'نمایش تاریخچه ورژن ها',
     more: 'بیشتر',
     close : 'بستن',
-    description: 'توضیحات'
+    description: 'توضیحات',
+    backBtn : 'برگشت',
+    getbtn : 'دریافت',
+    age: 'سن',
+    feedback : '0 بازخورد'
 };
 export default messages;

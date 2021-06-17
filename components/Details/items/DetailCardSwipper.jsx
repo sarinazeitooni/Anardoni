@@ -1,6 +1,7 @@
 import ThirdSwipper from "../../thirdSwipper/ThirdSwipper";
 import style from './scss/DetailCardSwipper.module.scss';
 import messages from "./messages/messages";
+
 const DetailCardSwipper = ()=>{
     return(
         <div>
