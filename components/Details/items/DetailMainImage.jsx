@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './scss/DetailsMainImage.module.scss';
 import _ from "lodash";
-
 const DetailMainImage = ({item}) => {
     const containerImage=_.get(item,"containerImage","");
     const caption=_.get(item,"caption","");
@@ -19,6 +18,7 @@ const DetailMainImage = ({item}) => {
                      ) ` }}
                 />
             </div>
+            <div className={style.caption}>{caption}</div>
         </fragment>
     )
 };

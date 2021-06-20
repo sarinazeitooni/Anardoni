@@ -5,7 +5,8 @@ import MobileDetailInfo from "./mobileItems/MobileDetailInfo";
 import ThirdSwipper from "../thirdSwipper/ThirdSwipper";
 import MobileNewItems from "./mobileItems/MobileNewItems";
 import MobileDetailDescription from "./mobileItems/MobileDetailDescription";
-import DetailAdImage from "./items/DetailAdImage";
+import MobileDetailLinks from "./mobileItems/MobileDetailLinks";
+import MobileDetailInformation from "./mobileItems/MobileDetailInformation";
 function MobileDetail({card}){
     return(
         <React.Fragment>
@@ -15,6 +16,8 @@ function MobileDetail({card}){
             <ThirdSwipper/>
             <MobileNewItems item={card}/>
             <MobileDetailDescription item={card}/>
+            <MobileDetailLinks item={card}/>
+            <MobileDetailInformation item={card}/>
         </React.Fragment>
     )
 };

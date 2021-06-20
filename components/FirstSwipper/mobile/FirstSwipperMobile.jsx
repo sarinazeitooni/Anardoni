@@ -16,7 +16,6 @@ function FirstSwipperMobile() {
                     <AccountCircleTwoToneIcon fontSize='large' className={style['user-icon']}/>
                 </div>
             </div>
-
             <Swiper spaceBetween={1} slidesPerView={1}>
                 {data.map((card) =>
                     <SwiperSlide>

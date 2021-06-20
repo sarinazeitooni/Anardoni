@@ -1,0 +1,27 @@
+.feedback-container{
+  position: fixed;
+  top: 470px;
+  left: -47px;
+  height: 35px;
+  background-color: rgb(244, 59, 69);
+  color: white;
+  z-index: 10;
+  text-align: center;
+  font-family: anardoni;
+  font-size: 16px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  border-radius: 3px;
+  &:hover{
+    left: -45px;
+  }
+  span{
+    padding: 15px 30px 15px 55px
+  }
+  svg{
+    transform: rotate(90deg);
+    top: 3px;
+    left: 15px;
+    position: absolute;
+  }
+}

@@ -14,7 +14,7 @@ const MobileDetailNewItems = ({item})=>{
                     <div className={style['right-text']}>{messages.version}{version}</div>
                 </div>
                 <div className={style.versions}>
-                    <div className={style['colored-text']}>{messages.versionHistory}</div>
+                    <div className={style['colored-text']}> {messages.versionHistory} </div>
                         <div className={style['last-update-container']}>
                             {lastUpdate}
                         </div>
@@ -24,7 +24,7 @@ const MobileDetailNewItems = ({item})=>{
                 {
                     newItems.map((item) => {
                         return (
-                            <li className={style['about-items']}> - {item}</li>
+                            <li className={style['about-items']}>{item}</li>
                         )
                     })
                 }

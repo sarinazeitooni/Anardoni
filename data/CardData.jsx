@@ -4,13 +4,12 @@ let cardData = [
         id: 0,
         containerImage: images.firstImage,
         detailImage: images.firstDetailImage,
-        lastUpdate: "25روز پیش",
+        lastUpdate: "25 روز پیش",
         title: "تقویم 1400",
         subTitle: "همیشه بروز باش!",
         caption: "این برنامه در اناردونی برای دیوایس‌های iOS در دسترس است",
         seller: "امید آقاخانی",
         version: "419",
-        links: ['معرفی و دانلود'],
         previewImages: {
             firstPic: require("../images/firstPic.webp"),
             secondPic: "../images/secondPic.webp",
@@ -44,6 +43,10 @@ let cardData = [
             {
                 Title: "دسته بندی",
                 description: "آب و هوا",
+            },
+            {
+                Title: "سازگاری",
+                description: "iPhone",
             },
             {
                 Title: "محدوده سنی",
@@ -115,6 +118,10 @@ let cardData = [
                 description: "سرگرمی",
             },
             {
+                Title: "سازگاری",
+                description: "iPhone",
+            },
+            {
                 Title: "محدوده سنی",
                 description: "4+",
             },
@@ -182,6 +189,10 @@ let cardData = [
                 {
                     Title: "دسته بندی",
                     description: "خرید",
+                },
+                {
+                    Title: "سازگاری",
+                    description: "iPhone",
                 },
                 {
                     Title: "محدوده سنی",

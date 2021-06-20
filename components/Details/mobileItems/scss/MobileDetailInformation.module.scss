@@ -4,35 +4,32 @@
   letter-spacing: -1px;
   font-family: anardoni;
   color: white;
-  width: 58%;
+  direction: rtl;
+  width: 90%;
   padding-bottom: 18.5px;
+  padding: 10px 0;
   margin: 10px auto;
   .preview-title{
     margin-left: 95.5%;
   }
 }
 .about-container{
-  direction: rtl;
+  margin: 10px 0 26px 0;
   .about{
+    padding: 9px 0;
+    border-bottom: 1px solid #444;
+    font-weight: 200;
+    display:flex;
+    font-size: 13px;
+    justify-content: space-between;
+    flex-direction: row;
     .info-title{
       color: #6c757d;
-      width: 100px;
-      margin-left: 20px;
       text-align: left;
     }
     .info-items{
-      width: 50%;
       white-space: nowrap;
       text-align: right;
     }
-    margin: 5px;
-    width: 240px;
-    font-weight: 200;
-    display:flex;
-    justify-content: space-between;
-    flex-direction: row;
   }
-  margin-right: 65px;
-  display: flex;
-  flex-direction: column;
 }

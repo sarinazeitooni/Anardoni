@@ -22,6 +22,7 @@
     color: #6c757d;
   }
   .about-items{
+    direction: rtl;
     list-style-type: none;
     padding-bottom: 15px;
     font-size: .95em;
@@ -32,14 +33,14 @@
     text-align: left;
     .version{
       color: #6c757d;
-      font-size: .8em;
+      font-size: .9em;
     }
     .colored-text{
       white-space: nowrap;
       color: #375a7f;
       cursor: pointer;
       margin-bottom: 18px;
-      font-size: .8em;
+      font-size: .84em;
     }
   }
   .new-items{
@@ -50,9 +51,9 @@
   border-bottom: 1px solid #444;
   color: white;
   margin: 25px auto 15px auto;
-  padding-bottom: 20px;
-  width: 57.5%;
+  width: 58%;
   display: flex;
+  padding-bottom: 4px;
   flex-direction: row-reverse;
 }
 .last-update-container{

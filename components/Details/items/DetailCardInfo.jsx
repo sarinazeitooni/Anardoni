@@ -17,7 +17,7 @@ const DetailCardInfo = ({item})=>{
                     <span className={style.rate}> 4+ </span> <h2> {title} </h2>
                     <h4>{subTitle}</h4>
                     <h4>{seller}</h4>
-                    <h6 className={style['get-button']}>{messages.free}</h6>
+                    <h6 className={style['get-button']}>{messages.getbtn}</h6>
                 </div>
             </div>
             <div className='line'></div>

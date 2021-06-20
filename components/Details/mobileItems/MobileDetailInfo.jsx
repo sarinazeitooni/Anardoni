@@ -25,7 +25,7 @@ const MobileDetailInfo = ({item})=>{
                 </span>
                 <span className={style['feedback']}>
                     <div>0.0</div>
-                    <div>{messages.feedback}</div>
+                    <div>0 {messages.feedback} </div>
                     </span>
             </div>
         </div>

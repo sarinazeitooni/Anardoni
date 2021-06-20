@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from "./navigation/Navigation";
 import FirstSwipper from "./FirstSwipper/FirstSwipper";
 import TripsSwipper from "./TripsSwipper/TripsSwipper";
+import FeedBack from "./feedback/feedback";
 import { Provider } from "react-redux";
 import {BrowserView , isMobile} from 'react-device-detect';
 import MainMobile from "./MainMobile";
@@ -13,6 +14,7 @@ function Main(){
              <BrowserView>
                  <Navigation/>
                  <FirstSwipper/>
+                 <FeedBack/>
                  <TripsSwipper/>
              </BrowserView>
              {isMobile && <MainMobile/>}

@@ -50,10 +50,13 @@
   .preview-title{
     display: inline-block;
     font-size: 15.5px;
+    font-weight: bold;
     padding-bottom: 10px;
   }
 }
 .ad{
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #444;
   width: 90%;
   margin: 0 15px;
 }

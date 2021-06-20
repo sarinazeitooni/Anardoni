@@ -7,10 +7,12 @@ import DetailCardDescription from "./items/DetailCardDescription";
 import DetailAdImage from "./items/DetailAdImage";
 import DetailCardLink from "./items/DetailCardLink";
 import DetailCardInformation from "./items/DetailCardInformation";
+import FeedBack from "../feedback/feedback";
 const DetailsContainer = ({card})=>{
     return(
         <React.Fragment>
             <DetailMainImage item={card}/>
+            <FeedBack/>
             <DetailCardInfo item={card}/>
             <DetailCardSwipper/>
             <DetailCardNewItems item={card}/>

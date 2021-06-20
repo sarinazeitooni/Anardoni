@@ -6,7 +6,7 @@ const ThirdSwipper = ()=>{
     let data = ThirdSwipperData;
     let spaces = isMobile ? 15 : 1;
     let slides = isMobile ? 3 : 4;
-    let width = isMobile ? 65 : '260px';
+    let width = isMobile ? 65 : '262px';
     let height = isMobile ? 140 : 490;
     return(
         <div className={style['screenshot-container']}>

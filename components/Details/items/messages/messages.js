@@ -12,6 +12,6 @@ const messages ={
     backBtn : 'برگشت',
     getbtn : 'دریافت',
     age: 'سن',
-    feedback : '0 بازخورد'
+    feedback : 'بازخورد'
 };
 export default messages;

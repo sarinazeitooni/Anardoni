@@ -1,9 +1,9 @@
 import React from 'react';
-import style from './scss/DetailCardLink.module.scss';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import messages from "./messages/messages";
+import messages from "../items/messages/messages";
+import style from './scss/MobileDetailLinks.module.scss'
 import _ from "lodash";
-function DetailCardLink({item}){
+function MobileDetailLinks({item}){
     const links = _.get(item, "links",[]);
     const margin = (links) && '10px auto';
     const border = (links) && '1px solid #444';
@@ -24,5 +24,6 @@ function DetailCardLink({item}){
             </div>}
         </>
     )
-};
-export default DetailCardLink;
+
+}
+export default MobileDetailLinks;

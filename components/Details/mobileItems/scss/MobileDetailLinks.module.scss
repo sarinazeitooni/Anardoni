@@ -1,12 +1,12 @@
 .link-container{
-  width: 58%;
-  margin: 0px auto;
+  width: 90%;
+  margin: 5px auto;
+  padding-bottom: 25px;
   font-family: anardoni;
   color: white;
   text-align: right;
   .link-title{
     font-size: 15px;
-    margin: 10px 0;
     letter-spacing: -.7px;
   }
   .link{
@@ -15,14 +15,13 @@
     background-color: #d1ecf1;
     font-weight: bold;
     padding: 1.25rem 1.25rem;
-    margin: 18px -2px 30px 68.3%;
+    white-space: nowrap;
     span{
-      padding: 0 210px 0 0;
-
-        svg{
-          font-size: 22px;
-          position: absolute;
-        }
+      svg{
+        font-size: 20px;
+        left: 12%;
+        position: absolute;
+      }
     }
   }
 }

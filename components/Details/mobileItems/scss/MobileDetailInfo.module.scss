@@ -2,17 +2,17 @@
   color: white;
   display: flex;
   flex-direction: row-reverse;
-  margin: 25px 20px;
+  margin: 15px 20px;
   font-family: anardoni;
   .mobile-card-info-pic{
     img{
-      width: 100px;
-      height: 100px;
+      width: 110px;
+      height: 110px;
     }
   }
   .mobile-card-info-name{
     direction: rtl;
-    margin: 5PX 25px;
+    margin: 5px 25px;
     h2,h4{
       margin: 0;
     }
@@ -25,18 +25,15 @@
       font-weight: 200;
       margin: 4px 0;
     }
-    .rate{
-
-    }
     .mobile-get-button{
         margin: 20px 0px;
-        color: white;
-      font-size: 14px;
+        font-size: 14px;
         font-weight: 200;
-        width: fit-content;
+        color: white;
         background-color: #375a7f;
         border-radius: 20px;
-        padding: 3px 13px;
+        width: fit-content;
+        padding: 2px 16px;
     }
   }
 }
@@ -45,7 +42,7 @@
   color: #6c757d;
   display: flex;
   flex-direction: row-reverse;
-  margin: 20px;
+  margin: 15px;
   direction: rtl;
   .rate{
     div{

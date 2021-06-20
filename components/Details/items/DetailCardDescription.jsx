@@ -20,7 +20,6 @@ const DetailCardDescription = ({item})=>{
                 <span className={style['preview-title']}>{messages.description}</span>
                 <div className={style['about-items-container']}>
                     {description && <div>{description}</div>}
-                    <br/>
                     {about.map((item) =>
                         <li className={style['description-items']}>
                             {item}
