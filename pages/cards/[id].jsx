@@ -9,7 +9,6 @@ import store from "../../redux/store/store";
 import MobileDetail from "../../components/Details/MobileDetail";
 import Skeleton from "../../components/Details/skeleton/Skeleton";
 import MobileDetailSkeleton from "../../components/Details/skeleton/mobile/MobileSkeleton";
-import browser from 'browser-detect';
 function Details(){
     const router = useRouter();
     const { id } = router.query;
