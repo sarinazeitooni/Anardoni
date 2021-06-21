@@ -13,7 +13,7 @@ function MobileDetail({card}){
             <MobileNavigation/>
             <MobileDetailMainImage item={card}/>
             <MobileDetailInfo item={card}/>
-            <ThirdSwipper/>
+            <ThirdSwipper item={card} />
             <MobileNewItems item={card}/>
             <MobileDetailDescription item={card}/>
             <MobileDetailLinks item={card}/>

@@ -10,16 +10,13 @@ let cardData = [
         caption: "این برنامه در اناردونی برای دیوایس‌های iOS در دسترس است",
         seller: "امید آقاخانی",
         version: "419",
-        previewImages: {
-            firstPic: require("../images/firstPic.webp"),
-            secondPic: "../images/secondPic.webp",
-            thirdPic: "../images/thirdPic.webp",
-            forthPic: "../images/forthPic.webp",
-            fifthPic: "../images/fifthPic.webp",
-            sixthPic: "../images/sixthPic.webp",
-            seventhPic: "../images/seventhPic.webp",
-            lastPic: "../images/lastPic.webp"
-        },
+        previewImages: [
+            'https://s.anardoni.com/applications/2021/03/17/photos/pmVC8MQhq/screenshot1_pmVC8MQhq_2021_03_17_10_56_59.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/17/photos/pmVC8MQhq/screenshot2_pmVC8MQhq_2021_03_17_10_56_59.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/17/photos/pmVC8MQhq/screenshot3_pmVC8MQhq_2021_03_17_10_56_59.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/17/photos/pmVC8MQhq/screenshot8_pmVC8MQhq_2021_03_17_10_56_59.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/17/photos/pmVC8MQhq/screenshot7_pmVC8MQhq_2021_03_17_10_56_59.jpeg?format=webp'
+        ],
         newItems: ["اپدیت سال 1400"],
         more: ["چند تا ابزار دیگه هم داره از جمله:"],
         description: 'همین الان تقویم سال 1400 رو نصب کنید و از اون لذت ببرید...',
@@ -63,8 +60,75 @@ let cardData = [
 
         ]
 
-    }
-    ,
+    },
+    {
+        id: 3,
+        containerImage: images.secondImage,
+        detailImage: images.secondDetailImage,
+        lastUpdate: "یک ماه پیش",
+        title: "نماوا",
+        subTitle: "سرویس تماشای آنلاین فیلم و سریال",
+        caption: "این برنامه در اناردونی برای دیوایس‌های iOS در دسترس است",
+        seller: "آریا رسانه تدبیر (شاتل)",
+        version: "2.0.0.744",
+        links: ['معرفی و دانلود'],
+        previewImages: [
+            'https://s.anardoni.com/applications/2021/03/27/photos/XYJBoD6zy/screenshot1_XYJBoD6zy_2021_03_27_06_05_24.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/27/photos/XYJBoD6zy/screenshot2_XYJBoD6zy_2021_03_27_06_05_24.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/27/photos/XYJBoD6zy/screenshot3_XYJBoD6zy_2021_03_27_06_05_24.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/27/photos/XYJBoD6zy/screenshot4_XYJBoD6zy_2021_03_27_06_05_24.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/27/photos/XYJBoD6zy/screenshot5_XYJBoD6zy_2021_03_27_06_05_24.jpeg?format=webp'
+        ],
+        newItems: [
+            "طراحی چشم نواز جدید و افزایش تجربه کاربری",
+            "دسترسی به جدیدترین محتوای فیلم و سریال",
+            "جستجوی پیشرفته به همراه فیلتر برای دسترسی آسان تر",
+            "ایجاد نمای اختصاصی کودک به همراه قفل کودک برای فرزندان شما",
+            "دسته بندی های جدید برای ژانر فیلم ها"
+        ],
+        more: ["• امکان تماشای بخشی از یک فیلم بر روی یک دستگاه (موبایل، کامپیوتر و...) و تماشای ادامه آن بر روی دستگاه‌های مختلف ",
+            "• تماشای بی‌وقفه و بدون قطعی فیلم‌ها و سریال‌های محبوب شما، با بهره‌مندی از قابلیت تنظیم هوشمندانه کیفیت فیلم با توجه به سرعت اینترنت"],
+        about: [
+            "• تماشای آنلاین جذاب‌ترین و جدیدترین فیلم‌ها و سریال‌های روز ایران و جهان با بهترین کیفیت و به آسان‌ترین شکل ممکن",
+            "• پردیس نماوا، سرویسی برای تماشای آنلاین فیلم‌های روز سینمای ایران",
+            "• بدون مصرف ترافیک اینترنت (برای مشترکین شاتل) و ترافیک نیم‌بها برای سایر اپراتورها",
+            "• کاربران شاتل موبایل می‌توانند بدون خرید اشتراک از نماوا استفاده نمایند و ترافیک مصرفی آن‌ها تمام بها محاسبه خواهد شد",
+            "• امکان دانلود داخل برنامه و تماشای آفلاین",
+            "• امکان انتخاب زبان صدای فیلم بصورت دلخواه، در حین تماشای فیلم",
+        ],
+        information: [
+            {
+                color: "#007bff",
+                Title: 'فروشنده',
+                description: " رسانه تدبیر (شاتل)",
+            },
+            {
+                Title: "سایز",
+                description: "۲۲.۸۸ مگابایت",
+            },
+            {
+                Title: "دسته بندی",
+                description: "سرگرمی",
+            },
+            {
+                Title: "سازگاری",
+                description: "iPhone",
+            },
+            {
+                Title: "محدوده سنی",
+                description: "4+",
+            },
+            {
+                Title: "نسخه",
+                description: "2.0.0.744",
+            },
+            {
+                Title: "قیمت",
+                description: "رایگان"
+            }
+        ]
+
+    },
     {
         id: 1,
         containerImage: images.secondImage,
@@ -76,16 +140,13 @@ let cardData = [
         seller: "آریا رسانه تدبیر (شاتل)",
         version: "2.0.0.744",
         links: ['معرفی و دانلود'],
-        previewImages: {
-            firstPic: "../images/firstPic.webp",
-            secondPic: "../images/secondPic.webp",
-            thirdPic: "../images/thirdPic.webp",
-            forthPic: "../images/forthPic.webp",
-            fifthPic: "../images/fifthPic.webp",
-            sixthPic: "../images/sixthPic.webp",
-            seventhPic: "../images/seventhPic.webp",
-            lastPic: "../images/lastPic.webp"
-        },
+        previewImages: [
+            'https://s.anardoni.com/applications/2021/03/27/photos/XYJBoD6zy/screenshot1_XYJBoD6zy_2021_03_27_06_05_24.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/27/photos/XYJBoD6zy/screenshot2_XYJBoD6zy_2021_03_27_06_05_24.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/27/photos/XYJBoD6zy/screenshot3_XYJBoD6zy_2021_03_27_06_05_24.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/27/photos/XYJBoD6zy/screenshot4_XYJBoD6zy_2021_03_27_06_05_24.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/03/27/photos/XYJBoD6zy/screenshot5_XYJBoD6zy_2021_03_27_06_05_24.jpeg?format=webp'
+        ],
         newItems: [
             "طراحی چشم نواز جدید و افزایش تجربه کاربری",
             "دسترسی به جدیدترین محتوای فیلم و سریال",
@@ -148,16 +209,13 @@ let cardData = [
         seller: "آوازه نو پوشان پارسی",
         version: "2.3.1",
         links: ['وب اپلیکیشن'],
-        previewImages: {
-            firstPic: "../images/firstPic.webp",
-            secondPic: "../images/secondPic.webp",
-            thirdPic: "../images/thirdPic.webp",
-            forthPic: "../images/forthPic.webp",
-            fifthPic: "../images/fifthPic.webp",
-            sixthPic: "../images/sixthPic.webp",
-            seventhPic: "../images/seventhPic.webp",
-            lastPic: "../images/lastPic.webp"
-        },
+        previewImages: [
+            'https://s.anardoni.com/applications/2021/06/03/photos/nwgxgmLmj/screenshot1_nwgxgmLmj_2021_06_03_17_46_34.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/06/03/photos/nwgxgmLmj/screenshot2_nwgxgmLmj_2021_06_03_17_46_34.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/06/03/photos/nwgxgmLmj/screenshot3_nwgxgmLmj_2021_06_03_17_46_34.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/06/03/photos/nwgxgmLmj/screenshot4_nwgxgmLmj_2021_06_03_17_46_34.jpeg?format=webp',
+            'https://s.anardoni.com/applications/2021/06/03/photos/nwgxgmLmj/screenshot5_nwgxgmLmj_2021_06_03_17_46_34.jpeg?format=webp'
+            ],
         newItems: [
             "تغییراتی ذکر نشده است."
         ],

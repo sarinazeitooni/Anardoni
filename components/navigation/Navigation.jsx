@@ -7,9 +7,8 @@ import CategoryTwoToneIcon from '@material-ui/icons/CategoryTwoTone';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import messages from "./messages/messages";
-import { BrowserView, MobileView} from "react-device-detect";
 import style from './scss/navigation.module.scss';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 function Navigation(){
     const router = useRouter();
     let navItemClass;
@@ -18,22 +17,11 @@ function Navigation(){
         <fragment>
             <div className={style['navigation-container']}>
                 <ul className={style['item-container']}>
-                    <BrowserView>
                         <li className={style.item}>{messages.home} <HomeTwoToneIcon/></li>
                         <li className={style.item + " " + navItemClass}> {messages.apps}<LayersIcon/></li>
-                        <li className={style.item}>{messages.games}  <WhatshotIcon/></li>
+                        <li className={style.item}><a href='#games'>{messages.games}</a>  <WhatshotIcon/></li>
                         <li className={style.item}> {messages.categories} <CategoryTwoToneIcon/></li>
                         <li className={style.item}> {messages.search} <SearchTwoToneIcon/></li>
-                    </BrowserView>
-                    <MobileView>
-                        <li>
-                            <HomeTwoToneIcon/>
-                            <LayersIcon/>
-                            <WhatshotIcon/>
-                            <CategoryTwoToneIcon/>
-                            <SearchTwoToneIcon/>
-                        </li>
-                    </MobileView>
                 </ul>
                 <div className={style['log-in-container']}>
                     <button className={style['right-btn']}>{messages.signup}<AddCircleIcon/></button>

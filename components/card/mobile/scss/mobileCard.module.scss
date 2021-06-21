@@ -6,6 +6,7 @@
   .titles-container{
     text-align: right;
     display: flex;
+    justify-content: space-between;
     flex-direction: row-reverse;
     .titles{
       direction: rtl;
@@ -27,7 +28,7 @@
     .get-button{
       height: 26px;
       margin: 10px 5px;
-      color: #007bff;
+      color: #509def;
       background-color: #444;
       border-radius: 20px;
       width: fit-content;

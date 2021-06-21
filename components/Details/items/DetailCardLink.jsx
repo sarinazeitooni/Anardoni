@@ -6,11 +6,10 @@ import _ from "lodash";
 function DetailCardLink({item}){
     const links = _.get(item, "links",[]);
     const margin = (links) && '10px auto';
-    const border = (links) && '1px solid #444';
     return(
         <>
             {(links) &&
-            <div style={{margin: {margin}, borderBottom : {border}}} className={style['link-container']}>
+            <div style={{margin: {margin}}} className={style['link-container']}>
                 {
                     links.map((link)=>{
                         return(

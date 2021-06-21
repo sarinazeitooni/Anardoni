@@ -8,6 +8,7 @@
     img{
       width: 110px;
       height: 110px;
+      border-radius: 22.5%;
     }
   }
   .mobile-card-info-name{
@@ -26,14 +27,14 @@
       margin: 4px 0;
     }
     .mobile-get-button{
-        margin: 20px 0px;
+        margin: 14% 0px;
         font-size: 14px;
         font-weight: 200;
         color: white;
         background-color: #375a7f;
         border-radius: 20px;
         width: fit-content;
-        padding: 2px 16px;
+        padding: 5px 18px;
     }
   }
 }

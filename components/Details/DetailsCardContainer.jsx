@@ -14,7 +14,7 @@ const DetailsContainer = ({card})=>{
             <DetailMainImage item={card}/>
             <FeedBack/>
             <DetailCardInfo item={card}/>
-            <DetailCardSwipper/>
+            <DetailCardSwipper item={card}/>
             <DetailCardNewItems item={card}/>
             <DetailCardDescription item={card}/>
             <DetailAdImage/>

@@ -8,7 +8,7 @@ const FirstSwipper = () => {
     let data = cardData;
     return (
         <div className={style['swipper-container']}>
-                <Swiper spaceBetween={1} slidesPerView={3}>
+                <Swiper spaceBetween={1} slidesPerView={3.1}>
                     {data.map((card) =>
                         <SwiperSlide>
                         <Link href={{

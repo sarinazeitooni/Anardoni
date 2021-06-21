@@ -4,7 +4,6 @@ import _ from "lodash";
 import messages from "../items/messages/messages";
 import React from "react";
 const MobileDetailDiscription = ({item})=>{
-    const description = _.get(item, "description",'');
     const more = _.get(item, "more",['']);
     const about = _.get(item, "about",['']);
     const btnValue = useSelector(state => state.btnValue);

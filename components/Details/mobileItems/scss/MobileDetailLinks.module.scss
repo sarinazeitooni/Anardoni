@@ -3,6 +3,7 @@
   margin: 5px auto;
   padding-bottom: 25px;
   font-family: anardoni;
+  border-bottom: 1px solid #444;
   color: white;
   text-align: right;
   .link-title{
@@ -10,6 +11,7 @@
     letter-spacing: -.7px;
   }
   .link{
+    cursor: pointer;
     border-radius: 12px;
     color: #0c5460;
     background-color: #d1ecf1;

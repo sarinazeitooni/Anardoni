@@ -6,7 +6,7 @@ import { useSelector , useDispatch } from "react-redux";
 import MySkeleton from "../skeleton/Skeleton";
 import SmallCardContainer from "../smallCard/SmallCardContainer";
 import swiperAction from "../../redux/action/action";
-function SecondSwipper(){
+function SecondSwipper({title}){
     const [swipperData , setSwipperData] = useState(null);
     const dispatch = useDispatch();
     const swipperDataForTimeOut = useSelector(state => state.swipper);
@@ -20,8 +20,8 @@ function SecondSwipper(){
     return (
         <div className={style['second-swipper-container']}>
             <div className={style['swipper-title']}>
-                <div className={style['right-title']}>{messages.trips}</div>
-                <div className={style['left-title']}>{messages.more}</div>
+                <div className={style['right-title']}>{title}</div>
+                <div className={style['left-title']}><span>{messages.more}</span></div>
             </div>
                 <Swiper spaceBetween={0} slidesPerView={7}>
                     {!swipperData && (

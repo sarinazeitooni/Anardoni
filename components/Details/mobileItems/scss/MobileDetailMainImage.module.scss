@@ -2,17 +2,18 @@
 width: 600px;
 }
 .detail-main-image-mobile{
-  width: 100%;
-  height: 180px;
+  height: 260px;
   background-size: cover;
-}
-html[data-scroll="10"] .back-button {
-  background-color: #eee;
 }
 .scrolled{
   @extend .back-button;
   transition: all 1s;
+  background-color: #222222;
+  height: 50px;
   border-bottom: 1px solid #444;
+}
+.none{
+  display: none;
 }
 .back-button {
   color: #375a7f;
@@ -21,24 +22,33 @@ html[data-scroll="10"] .back-button {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #222222;
-  padding: 10px;
+  padding: 15px;
   span{
     margin: 0 15px;
   }
   svg{
     position: absolute;
-    top: 9px;
+    top: 14px;
     left: 10px;
   }
+}
+.detail-image-top{
+  width: 40px;
+  border-radius: 22.5%;
+  height: 40px;
+  position: fixed;
+  top: 5px;
+  left: 43%;
+  z-index: 10;
 }
 .get-button{
   z-index: 10;
   font-family: anardoni;
   right: 15px;
+  display: block;
   position: fixed;
   transition: all1s;
-  top: 8px;
+  top: 12px;
   font-size: 14px;
   color: white;
   background-color: #375a7f;

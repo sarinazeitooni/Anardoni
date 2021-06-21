@@ -11,6 +11,7 @@ const MobileDetailMainImage = ({item}) => {
     };
     window.addEventListener('scroll', changeColor);
     const containerImage=_.get(item,"containerImage","");
+    const detail=_.get(item,"detailImage","");
     return (
         <React.Fragment>
             <div className={style['detail-main-image-mobile-container']}>
@@ -22,7 +23,8 @@ const MobileDetailMainImage = ({item}) => {
                         </div>
                     </a>
                 </Link>
-                <div className={style[ navbarFixed ? 'get-button' : '']}>{messages.getbtn}</div>
+                <img className={style[ navbarFixed ? 'detail-image-top' : 'none']} src={detail}/>
+                <div className={style[ navbarFixed ? 'get-button' : 'none']}>{messages.getbtn}</div>
 
                 <div className={style['detail-main-image-mobile']}
                      style={{ backgroundImage: `url(

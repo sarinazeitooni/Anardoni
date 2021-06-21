@@ -7,13 +7,13 @@
   width: 58%;
   margin-right: auto;
   margin-left: auto;
+  li , .about-items,.description-items{
+    list-style-type: none !important;
+  }
   .about-items-container{
     .item-container{
       margin: 25px 5px 5px 5px;
       overflow: hidden;
-      li{
-        list-style-type: none;
-      }
     }
     #more-mask{
       padding: 10px;
@@ -24,7 +24,6 @@
       .about-items{
         padding-bottom: 15px;
         display: block;
-        list-style-type: none;
       }
     }
     .button-container{
@@ -46,7 +45,6 @@
     .description-items{
       line-height: 25px;
       display: block;
-      list-style-type: none;
     }
     margin-bottom: 5px;
   }
