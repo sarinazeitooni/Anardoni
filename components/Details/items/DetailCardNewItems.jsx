@@ -6,8 +6,7 @@ const DetailCardNewItems = ({item})=>{
     const version=_.get(item,"version","");
     const newItems=_.get(item,"newItems",['']);
     return(
-        <div>
-            <div className={style['whats-new-container']}>
+        <div className={style['whats-new-container']}>
                 <div className={style['new-items']}>
                     <div className={style['preview-title']}>{messages.whatsNew}</div>
                     <div className={style['about-items-container']}>
@@ -27,7 +26,6 @@ const DetailCardNewItems = ({item})=>{
                     </BrowserView>
                 </div>
             </div>
-        </div>
     )
 }
 export default DetailCardNewItems;

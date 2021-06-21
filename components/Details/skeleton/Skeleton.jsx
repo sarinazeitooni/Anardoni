@@ -3,7 +3,7 @@ import { Skeleton } from '@material-ui/lab';
 import style from './scss/detail-skeleton.module.scss';
 function DetailSkeleton(){
     return(
-        <>
+        <React.Fragment>
             <div className={style['main-image-skeleton']}>
                 <Skeleton animation="wave" variant="rect" width={500} height={310} />
             </div>
@@ -26,7 +26,7 @@ function DetailSkeleton(){
                 <Skeleton animation="wave" variant="rect" width={250} height={320} />
                 <Skeleton animation="wave" variant="rect" width={150} height={320} />
             </div>
-        </>
+        </React.Fragment>
     )
 };
 export default DetailSkeleton;

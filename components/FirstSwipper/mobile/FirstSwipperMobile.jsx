@@ -9,7 +9,7 @@ import AccountCircleTwoToneIcon from '@material-ui/icons/AccountCircleTwoTone';
 function FirstSwipperMobile() {
     const data = cardData;
     return (
-        <>
+        <React.Fragment>
             <div className={style['swiper-mobile-container']}>
                 <div className={style['header']}>
                     <h2 className={style['swiper-title']}>{messages.apps}</h2>
@@ -18,7 +18,7 @@ function FirstSwipperMobile() {
             </div>
             <Swiper spaceBetween={1} slidesPerView={1}>
                 {data.map((card) =>
-                    <SwiperSlide>
+                    <SwiperSlide key={card.id}>
                         <Link href={{
                             pathname: '/cards/[id]',
                             query: {id: card.id}
@@ -29,7 +29,7 @@ function FirstSwipperMobile() {
                     </SwiperSlide>
                 )}
             </Swiper>
-        </>
+        </React.Fragment>
 
 
     )

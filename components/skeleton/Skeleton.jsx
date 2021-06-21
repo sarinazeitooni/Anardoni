@@ -7,9 +7,9 @@ const MySkeleton=(props)=>{
         slidenum.push(index);
     }
     return(
-        slidenum.map(()=>{
+        slidenum.map((index)=>{
             return(
-                <div className={style['skeleton-container']}>
+                <div key={index} className={style['skeleton-container']}>
                     <Skeleton animation="wave" variant="circle" width={100} height={100} />
                     <br/>
                     <Skeleton animation="wave" variant="text" width={100} height={20} />

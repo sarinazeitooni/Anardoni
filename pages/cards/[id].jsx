@@ -22,15 +22,14 @@ function Details(){
     }, [detailData])
     return(
         <Provider store={store}>
-            {isMobile ? <>
-                {!detailData && <MobileDetailSkeleton/>}
-                {detailData &&<MobileDetail card={detailData}/>}
-            </>
+            {isMobile ? <React.Fragment>
+                {detailData ? <MobileDetail card={detailData}/> : <MobileDetailSkeleton/>}
+            </React.Fragment>
             :
-            <>  <Navigation/>
-                {!detailData && <Skeleton/> }
-                {detailData && <DetailsContainer card={detailData}/>}
-            </>
+            <React.Fragment>
+                <Navigation/>
+                {detailData ? <DetailsContainer card={detailData}/> : <Skeleton/>}
+            </React.Fragment>
             }
         </Provider>
     )

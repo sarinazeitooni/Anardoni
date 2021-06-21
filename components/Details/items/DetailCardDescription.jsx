@@ -15,7 +15,6 @@ const DetailCardDescription = ({item})=>{
         document.getElementById('more-mask').style.height="fitContent";
     };
     return (
-        <div>
             <div className={style.preview}>
                 <span className={style['preview-title']}>{messages.description}</span>
                 <div className={style['about-items-container']}>
@@ -41,8 +40,6 @@ const DetailCardDescription = ({item})=>{
                     </div>
                 </div>
             </div>
-            <div className="line"></div>
-        </div>
     )
 }
 export default DetailCardDescription;

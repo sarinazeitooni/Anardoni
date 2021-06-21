@@ -13,7 +13,6 @@ const MobileDetailMainImage = ({item}) => {
     const containerImage=_.get(item,"containerImage","");
     const detail=_.get(item,"detailImage","");
     return (
-        <React.Fragment>
             <div className={style['detail-main-image-mobile-container']}>
                 <Link href={{pathname : '/'}}>
                     <a>
@@ -32,7 +31,6 @@ const MobileDetailMainImage = ({item}) => {
                      ) ` }}
                 />
             </div>
-        </React.Fragment>
     )
 };
 export default MobileDetailMainImage;

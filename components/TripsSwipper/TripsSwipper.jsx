@@ -29,7 +29,7 @@ function SecondSwipper({title}){
                     )}
                     {swipperData && (swipperData.map((item)=>{
                         return(
-                            <SwiperSlide>
+                            <SwiperSlide key={item.id}>
                                 <SmallCardContainer title={item.title} detail={item.detail} cardImage={item.url}/>
                             </SwiperSlide>
                         )

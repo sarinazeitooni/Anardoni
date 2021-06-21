@@ -5,7 +5,7 @@ const DetailMainImage = ({item}) => {
     const containerImage=_.get(item,"containerImage","");
     const caption=_.get(item,"caption","");
     return (
-        <fragment>
+        <React.Fragment>
             <div className={style['detail-main-image-container']}>
                 <div className={style['darker-back']}/>
                 <div className={style['blurred-image']}
@@ -19,7 +19,7 @@ const DetailMainImage = ({item}) => {
                 />
             </div>
             <div className={style.caption}>{caption}</div>
-        </fragment>
+        </React.Fragment>
     )
 };
 export default DetailMainImage;

@@ -9,7 +9,7 @@ const MobileMySkeleton=(props)=>{
     return(
         slidenum.map((slide)=>{
             return(
-                <div className={style['skeleton-container']}>
+                <div key={slide} className={style['skeleton-container']}>
                     <Skeleton animation="wave" variant="circle" width={50} height={50} />
                     <Skeleton animation="wave" variant="text" width={200} height={20} />
                 </div>

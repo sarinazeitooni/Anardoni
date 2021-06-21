@@ -3,11 +3,11 @@ import style from './scss/small-card-mobile.module.scss';
 import messages from "../../TripsSwipper/messages/messages";
 const SmallCardContainer = ({items})=>{
     return(
-        <div>
+        <React.Fragment>
             {
                 items.map((item)=>{
                     return(
-                        <div className={style['card-without-container-mobile']}>
+                        <div key={item.id} className={style['card-without-container-mobile']}>
                             <div className={style['card-without-container-image-mobile']}>
                                 <img src={item.url}/>
                             </div>
@@ -20,7 +20,7 @@ const SmallCardContainer = ({items})=>{
                     )
                 })
             }
-        </div>
+        </React.Fragment>
     )
 }
 export default SmallCardContainer

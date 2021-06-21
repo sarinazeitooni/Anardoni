@@ -4,12 +4,10 @@ import messages from "./messages/messages";
 
 const DetailCardSwipper = ({item})=>{
     return(
-        <div>
             <div className={style.preview}>
                 <span className={style['preview-title']}>{messages.swipperTitle}</span>
                 <ThirdSwipper item={item}/>
             </div>
-        </div>
     )
 }
 export default DetailCardSwipper;

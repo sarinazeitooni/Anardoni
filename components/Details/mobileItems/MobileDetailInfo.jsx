@@ -7,7 +7,7 @@ const MobileDetailInfo = ({item})=>{
     const subTitle = _.get(item, "subTitle",'');
     const title = _.get(item, "title",'');
     return(
-        <div>
+        <React.Fragment>
             <div className={style['mobile-card-info']}>
                 <div className={style['mobile-card-info-pic']}>
                     <img src={detailImage}/>
@@ -28,7 +28,7 @@ const MobileDetailInfo = ({item})=>{
                     <div>0 {messages.feedback} </div>
                     </span>
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 export default MobileDetailInfo;

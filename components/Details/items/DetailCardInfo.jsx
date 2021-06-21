@@ -8,8 +8,7 @@ const DetailCardInfo = ({item})=>{
     const seller = _.get(item, "seller",'');
     const title = _.get(item, "title",'');
     return(
-        <div>
-            <div className={style['card-info']}>
+        <div className={style['card-info']}>
                 <div className={style['card-info-pic']}>
                     <img src={detailImage}/>
                 </div>
@@ -20,7 +19,6 @@ const DetailCardInfo = ({item})=>{
                     <h6 className={style['get-button']}>{messages.getbtn}</h6>
                 </div>
             </div>
-        </div>
     )
 }
 export default DetailCardInfo;

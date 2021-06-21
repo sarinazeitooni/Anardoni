@@ -15,7 +15,7 @@ const MobileDetailDiscription = ({item})=>{
         document.getElementById('more-mask').style.height="fitContent";
     };
     return (
-        <>
+        <React.Fragment>
             <div className={style.preview}>
                 <span className={style['preview-title']}>{messages.description}</span>
                 <div className={style['about-items-container']}>
@@ -41,7 +41,7 @@ const MobileDetailDiscription = ({item})=>{
                 </div>
             </div>
             <img className={style.ad} src='https://anardoni.com/img/ads/anargift.gif'/>
-        </>
+        </React.Fragment>
     )
 }
 export default MobileDetailDiscription;

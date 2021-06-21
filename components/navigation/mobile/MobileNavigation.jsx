@@ -11,7 +11,6 @@ function MobileNavigation(){
     let navItemClass;
     (router.pathname == '/') ? navItemClass = style.selected : navItemClass = '';
     return(
-        <fragment>
             <div className={style['navigation-mobile-container']}>
                 <ul className={style['item-mobile-container']}>
                         <li className={style['item']}> {messages.search} <SearchTwoToneIcon/></li>
@@ -20,7 +19,6 @@ function MobileNavigation(){
                         <li className={style['item']}> <a href='#games'>{messages.games}</a> <CategoryTwoToneIcon/></li>
                 </ul>
             </div>
-        </fragment>
     )
 }
 export default MobileNavigation;

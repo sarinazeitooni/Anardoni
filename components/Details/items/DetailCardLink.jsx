@@ -4,7 +4,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import messages from "./messages/messages";
 function DetailCardLink({item}){
     return(
-        <>
+        <React.Fragment>
             {
                 item.links &&
                 <div className={style['link-container']}>
@@ -20,7 +20,7 @@ function DetailCardLink({item}){
                     }
                 </div>
             }
-        </>
+        </React.Fragment>
     )
 };
 export default DetailCardLink;

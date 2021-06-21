@@ -4,7 +4,7 @@ import messages from "../items/messages/messages";
 import style from './scss/mobile-detail-links.module.scss';
 function MobileDetailLinks({item}){
     return(
-        <>
+        <React.Fragment>
             {
                 item.links &&
                 <div className={style['link-container']}>
@@ -20,7 +20,7 @@ function MobileDetailLinks({item}){
                     }
                 </div>
             }
-        </>
+        </React.Fragment>
     )
 
 }

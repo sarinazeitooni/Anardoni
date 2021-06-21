@@ -7,7 +7,7 @@ const MobileDetailNewItems = ({item})=>{
     const newItems=_.get(item,"newItems",['']);
     const lastUpdate = _.get(item, "lastUpdate","");
     return(
-        <>
+        <React.Fragment>
             <div className={style['whats-new-container']}>
                 <div className={style['new-items']}>
                     <div className={style['preview-title']}>{messages.whatsNew}</div>
@@ -29,7 +29,7 @@ const MobileDetailNewItems = ({item})=>{
                     })
                 }
             </div>
-        </>
+        </React.Fragment>
     )
 }
 export default MobileDetailNewItems;

@@ -37,9 +37,9 @@ function TripSwipperMobile ({title}){
                     {!result && (
                         <MobileMySkeleton slides={4}/>
                     )}
-                    {result && (result.map((item)=>{
+                    {result && (result.map((item,index)=>{
                         return(
-                            <SwiperSlide>
+                            <SwiperSlide key={index}>
                                 <SmallCardMobile items={item}/>
                             </SwiperSlide>
                             )

@@ -14,8 +14,7 @@ function Navigation(){
     let navItemClass;
     (router.pathname == '/') ? navItemClass = style.selected : navItemClass = '';
     return(
-        <fragment>
-            <div className={style['navigation-container']}>
+        <div className={style['navigation-container']}>
                 <ul className={style['item-container']}>
                         <li className={style.item}>{messages.home} <HomeTwoToneIcon/></li>
                         <li className={style.item + " " + navItemClass}> {messages.apps}<LayersIcon/></li>
@@ -29,7 +28,6 @@ function Navigation(){
                     <button className={style['left-btn']}><VpnKeyIcon/>{messages.login}</button>
                 </div>
             </div>
-        </fragment>
     )
 }
 export default Navigation;

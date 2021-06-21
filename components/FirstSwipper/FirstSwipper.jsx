@@ -10,7 +10,7 @@ const FirstSwipper = () => {
         <div className={style['swipper-container']}>
                 <Swiper spaceBetween={1} slidesPerView={3.1}>
                     {data.map((card) =>
-                        <SwiperSlide>
+                        <SwiperSlide key={card.id}>
                         <Link href={{
                             pathname : '/cards/[id]',
                             query : {id : card.id}
