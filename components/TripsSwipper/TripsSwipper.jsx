@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import style from './scss/TripsSwipper.module.scss';
+import style from './scss/trips-swipper.module.scss';
 import messages from "./messages/messages";
 import { useSelector , useDispatch } from "react-redux";
 import MySkeleton from "../skeleton/Skeleton";

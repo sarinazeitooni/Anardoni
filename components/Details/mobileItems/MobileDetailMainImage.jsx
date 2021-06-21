@@ -1,6 +1,6 @@
-import React , {useState}  from 'react';
+import React, { useState} from 'react';
 import _ from "lodash";
-import style from './scss/MobileDetailMainImage.module.scss';
+import style from './scss/mobile-detail-main-image.module.scss';
 import messages from "../items/messages/messages";
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Link from 'next/link';

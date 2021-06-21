@@ -1,5 +1,5 @@
 import React from "react";
-import style from './scss/smallCardMobile.module.scss';
+import style from './scss/small-card-mobile.module.scss';
 import messages from "../../TripsSwipper/messages/messages";
 const SmallCardContainer = ({items})=>{
     return(

@@ -3,7 +3,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import Card from "../card/Card";
 import Link from 'next/link';
 import cardData from "../../data/CardData";
-import style from './scss/FirstSwipper.module.scss';
+import style from './scss/first-swipper.module.scss';
 const FirstSwipper = () => {
     let data = cardData;
     return (

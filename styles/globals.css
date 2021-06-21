@@ -1,3 +1,10 @@
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    *{
+      letter-spacing: -1px !important;
+    }
+  }
+}
 html,
 body {
   scroll-behavior: smooth;
@@ -5,12 +12,10 @@ body {
   padding: 0;
   margin: 0;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 * {
   box-sizing: border-box;
 }

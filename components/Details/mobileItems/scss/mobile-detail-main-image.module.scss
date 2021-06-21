@@ -1,9 +1,11 @@
 .detail-main-image-mobile-container{
-width: 600px;
+width: 100%;
 }
 .detail-main-image-mobile{
   height: 260px;
+  width: 100%;
   background-size: cover;
+  background-position: center;
 }
 .scrolled{
   @extend .back-button;

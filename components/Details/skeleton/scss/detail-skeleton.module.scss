@@ -1,0 +1,28 @@
+.main-image-skeleton,.caption-skeleton,.title-skeleton-container, .swiper-skeleton-container,.swipper-skeleton-title{
+  width: fit-content;
+  margin: 10px auto;
+}.title-skeleton-container{
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  text-align: right;
+  border-bottom: 1px solid #444;
+  padding: 10px;
+   .title-container{
+     margin: 60px 20px;
+   }
+ }
+ .swipper-skeleton-title{
+   margin-top: 20px;
+   margin-right: 25%;
+   direction: rtl;
+   text-align: right;
+ }
+ .swiper-skeleton-container{
+   display: flex;
+   width: 50%;
+   margin-top: 40px;
+   flex-direction: row;
+   justify-content: space-between;
+ }

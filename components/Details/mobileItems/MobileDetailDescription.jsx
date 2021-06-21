@@ -1,5 +1,5 @@
 import { useSelector , useDispatch } from "react-redux";
-import style from './scss/MobileDetailDescription.module.scss';
+import style from './scss/mobile-detail-description.module.scss';
 import _ from "lodash";
 import messages from "../items/messages/messages";
 import React from "react";

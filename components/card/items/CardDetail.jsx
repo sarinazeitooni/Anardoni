@@ -1,5 +1,5 @@
 import React from "react";
-import style from '../scss/Card.module.scss';
+import style from '../scss/card.module.scss';
 import Image from 'next/image';
 const CardDetail=({detailImage,title,subTitle,id})=>{
     return(

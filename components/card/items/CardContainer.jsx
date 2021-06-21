@@ -1,5 +1,5 @@
 import React from "react";
-import style from '../scss/Card.module.scss';
+import style from '../scss/card.module.scss';
 const CardContainer = ({children, containerImage}) => {
     return (
         <div className={style['card-container']}>

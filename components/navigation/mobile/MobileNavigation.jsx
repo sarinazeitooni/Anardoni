@@ -4,7 +4,7 @@ import LayersIcon from '@material-ui/icons/Layers';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
 import CategoryTwoToneIcon from '@material-ui/icons/CategoryTwoTone';
 import messages from "../messages/messages";
-import style from './scss/navigationMobile.module.scss';
+import style from './scss/navigation-mobile.module.scss';
 import { useRouter } from 'next/router';
 function MobileNavigation(){
     const router = useRouter();

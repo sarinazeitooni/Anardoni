@@ -1,26 +1,24 @@
 import React from 'react';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import messages from "../items/messages/messages";
-import style from './scss/MobileDetailLinks.module.scss'
-import _ from "lodash";
+import style from './scss/mobile-detail-links.module.scss';
 function MobileDetailLinks({item}){
-    const links = _.get(item, "links",[]);
-    const margin = (links) && '10px auto';
     return(
         <>
-            {(links) &&
-            <div style={{margin: {margin}}} className={style['link-container']}>
-                {
-                    links.map((link)=>{
-                        return(
-                            <div>
-                                <h3 className={style['link-title']}>{messages.linkTitle}</h3>
-                                <div className={style.link}><span> <ArrowBackIosIcon/> </span> {link}</div>
-                            </div>
-                        )
-                    })
-                }
-            </div>
+            {
+                item.links &&
+                <div className={style['link-container']}>
+                    {
+                        item.links.map((link)=>{
+                            return(
+                                <div>
+                                    <h3 className={style['link-title']}>{messages.linkTitle}</h3>
+                                    <div className={style.link}><span> <ArrowBackIosIcon/> </span> {link}</div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             }
         </>
     )

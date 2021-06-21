@@ -1,5 +1,5 @@
 import React from'react';
-import style from './scss/feedback.module.scss';
+import style from './scss/feed-back.module.scss';
 import MoodIcon from '@material-ui/icons/Mood';
 import messages from "../Details/items/messages/messages";
 const FeedBack = () => {

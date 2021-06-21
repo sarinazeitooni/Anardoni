@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './scss/MobileDetailInfo.module.scss';
+import style from './scss/mobile-detail-info.module.scss';
 import messages from "../items/messages/messages";
 import _ from "lodash";
 const MobileDetailInfo = ({item})=>{

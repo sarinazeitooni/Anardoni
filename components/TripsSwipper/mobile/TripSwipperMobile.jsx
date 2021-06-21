@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import swiperAction from "../../../redux/action/action";
-import style from './scss/TripSwipperMobile.module.scss'
+import style from './scss/trip-swipper-mobile.module.scss'
 import messages from "../messages/messages";
 import MobileMySkeleton from "../../skeleton/mobile/Skeleton";
 import SmallCardMobile from "../../smallCard/mobile/SmallCardMobile";
 import {Swiper, SwiperSlide} from 'swiper/react';
-function TripSwipperMobile (){
+function TripSwipperMobile ({title}){
     const [swipperData , setSwipperData] = useState(null);
     const dispatch = useDispatch();
     const swipperDataForTimeOut = useSelector(state => state.swipper);
@@ -25,7 +25,7 @@ function TripSwipperMobile (){
     return(
         <div className={style['second-swipper-mobile-container']}>
             <div className={style['swipper-mobile-title']}>
-                <div className={style['right-mobile-title']}>{messages.trips}</div>
+                <div className={style['right-mobile-title']}>{title}</div>
                 <div className={style['left-mobile-title']}>{messages.more}</div>
             </div>
                 <div className={style['smallcards-mobile-container']}>

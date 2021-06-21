@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './scss/mobileCard.module.scss';
+import style from './scss/mobile-card.module.scss';
 import messages from "./messages/messages";
 function MobileCardContainer({title,subtitle,containerImage}){
     return(

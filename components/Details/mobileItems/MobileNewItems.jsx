@@ -1,6 +1,6 @@
 import messages from "../items/messages/messages";
 import _ from "lodash";
-import style from './scss/MobileDetailNewItems.module.scss';
+import style from './scss/mobile-detail-new-items.module.scss';
 import React from "react";
 const MobileDetailNewItems = ({item})=>{
     const version=_.get(item,"version","");

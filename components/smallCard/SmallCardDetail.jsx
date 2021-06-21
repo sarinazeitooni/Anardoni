@@ -1,5 +1,5 @@
 import React from "react";
-import style from './scss/smallCard.module.scss'
+import style from './scss/small-card.module.scss'
 const SmallCardDetail = ({title,detail})=>{
     return(
         <div className={style['card-without-container-detail']}>

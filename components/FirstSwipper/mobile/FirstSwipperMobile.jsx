@@ -2,7 +2,7 @@ import React from 'react';
 import MobileCardContainer from "../../card/mobile/MobileCardContainer";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import Link from 'next/link';
-import style from './swiperMobile.module.scss';
+import style from './scss/swiper-mobile.module.scss';
 import messages from "../../navigation/messages/messages";
 import cardData from "../../../data/CardData";
 import AccountCircleTwoToneIcon from '@material-ui/icons/AccountCircleTwoTone';

@@ -1,6 +1,6 @@
 import React from 'react';
 import messages from "../items/messages/messages";
-import style from './scss/MobileDetailInformation.module.scss';
+import style from './scss/mobile-detail-information.module.scss';
 import _ from "lodash";
 function DetailCardInformation({item}){
     const information = _.get(item, "information",['']);
