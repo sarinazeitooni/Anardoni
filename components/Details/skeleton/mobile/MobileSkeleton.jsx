@@ -5,9 +5,8 @@ function MobileDetailSkeleton(){
     return(
         <>
             <Skeleton animation="wave" variant="rect" width={'100%'} height={250}/>
+            <Skeleton animation="wave" variant="circle" width={150} height={150} />
             <div className={style['title-skeleton-container-m']}>
-                <Skeleton animation="wave" variant="text" width={100} height={25} />
-                <Skeleton animation="wave" variant="text" width={200} height={20} />
             </div>
 
         </>

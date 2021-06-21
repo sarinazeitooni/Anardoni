@@ -18,7 +18,6 @@ function Main(){
                  <FirstSwipper/>
                  <FeedBack/>
                  <TripsSwipper title={messages.trips}/>
-                 <FirstSwipper/>
                  <GamesSwipper/>
              </BrowserView>
              {isMobile && <MainMobile/>}

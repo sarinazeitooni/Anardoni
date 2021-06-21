@@ -1,9 +1,5 @@
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) {
-    *{
-      letter-spacing: -1px !important;
-    }
-  }
+@supports (-webkit-touch-callout: none) {
+  letter-spacing: -1px !important;
 }
 html,
 body {

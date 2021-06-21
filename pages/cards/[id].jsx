@@ -4,14 +4,13 @@ import {useRouter} from "next/router";
 import cardData from "../../data/CardData";
 import DetailsContainer from "../../components/Details/DetailsCardContainer";
 import { Provider } from "react-redux";
-import {BrowserView,MobileView , isMobile} from 'react-device-detect';
+import {isMobile} from 'react-device-detect';
 import store from "../../redux/store/store";
 import MobileDetail from "../../components/Details/MobileDetail";
 import Skeleton from "../../components/Details/skeleton/Skeleton";
 import MobileDetailSkeleton from "../../components/Details/skeleton/mobile/MobileSkeleton";
 import browser from 'browser-detect';
 function Details(){
-    const Browser = browser().name;
     const router = useRouter();
     const { id } = router.query;
     const [detailData , setDetailData] = useState(null);
@@ -23,21 +22,16 @@ function Details(){
     }, [detailData])
     return(
         <Provider store={store}>
-            <BrowserView>
-                <Navigation/>
+            {isMobile ? <>
+                {!detailData && <MobileDetailSkeleton/>}
+                {detailData &&<MobileDetail card={detailData}/>}
+            </>
+            :
+            <>  <Navigation/>
                 {!detailData && <Skeleton/> }
                 {detailData && <DetailsContainer card={detailData}/>}
-            </BrowserView>
-            <MobileView>
-                {!detailData && <MobileDetailSkeleton/>}
-                {detailData &&
-                    (Browser=='safari')
-                        ?
-                        <div style={{letterSpacing: '-5px'}}><MobileDetail card={detailData}/></div>
-                        :
-                        <div style={{letterSpacing: '18px'}}><MobileDetail card={detailData}/></div>
-                }
-            </MobileView>
+            </>
+            }
         </Provider>
     )
 };

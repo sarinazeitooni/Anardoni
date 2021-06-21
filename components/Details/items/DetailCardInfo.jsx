@@ -20,7 +20,6 @@ const DetailCardInfo = ({item})=>{
                     <h6 className={style['get-button']}>{messages.getbtn}</h6>
                 </div>
             </div>
-            <div className='line'></div>
         </div>
     )
 }
