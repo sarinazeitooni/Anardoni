@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import Card from "../card/Card";
 import Link from 'next/link';
@@ -6,11 +6,11 @@ import cardData from "../../data/CardData";
 import style from './scss/first-swipper.module.scss';
 
 const FirstSwipper = () => {
-    let data = cardData;
+    const [Data,setData] = useState(cardData);
     return (
         <div className={style['swipper-container']}>
             <Swiper spaceBetween={1} slidesPerView={3.1}>
-                {data.map((card) =>
+                {Data.map((card) =>
                     <SwiperSlide key={card.id}>
                         <Link href={{
                             pathname: '/cards/[id]',

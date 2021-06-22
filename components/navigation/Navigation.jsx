@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import HomeTwoToneIcon from '@material-ui/icons/HomeTwoTone';
 import SearchTwoToneIcon from '@material-ui/icons/SearchTwoTone';
 import LayersIcon from '@material-ui/icons/Layers';
@@ -12,13 +12,15 @@ import {useRouter} from 'next/router';
 
 function Navigation() {
     const router = useRouter();
-    let navItemClass;
-    (router.pathname == '/') ? navItemClass = style.selected : navItemClass = '';
+    const [NavItemClass , SetNavItemClass] = useState('');
+    useEffect(()=>{
+        (router.pathname == '/') ? SetNavItemClass(style.selected) : SetNavItemClass('');
+    },[]);
     return (
         <div className={style['navigation-container']}>
             <ul className={style['item-container']}>
                 <button className={style.item}>{messages.home} <HomeTwoToneIcon/></button>
-                <button className={style.item + " " + navItemClass}> {messages.apps}<LayersIcon/></button>
+                <button className={style.item + " " + NavItemClass}> {messages.apps}<LayersIcon/></button>
                 <button className={style.item}><a href='#games'>{messages.games}</a><WhatshotIcon/></button>
                 <button className={style.item}> {messages.categories} <CategoryTwoToneIcon/></button>
                 <button className={style.item}> {messages.search} <SearchTwoToneIcon/></button>

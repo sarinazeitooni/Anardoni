@@ -17,7 +17,7 @@ function Details(){
         setTimeout(()=>{
             setDetailData(cardData[id])
 
-        },30000);
+        },1000);
     }, [detailData])
     return(
         <Provider store={store}>

@@ -71,8 +71,8 @@
     }
   }
   .selected{
-    opacity: 1;
-    border-bottom: 3px solid $color-text;
+    opacity: 1 !important;
+    border-bottom: 3px solid $color-text !important;
     color: $color-text !important;
   }
   .item-container{

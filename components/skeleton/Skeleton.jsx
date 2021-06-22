@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Skeleton} from '@material-ui/lab';
 import style from './scss/skeleton.module.scss'
 
 const SwiperSkeleton = (props) => {
+    // const [slideNum , setSlideNum] = useState([]);
+    // for (let index = 1; index < props.slides; index++) {
+    //     setSlideNum([slideNum.push(index)]);
+    // }
     let slidenum = [];
     for (let index = 1; index < props.slides; index++) {
         slidenum.push(index);
