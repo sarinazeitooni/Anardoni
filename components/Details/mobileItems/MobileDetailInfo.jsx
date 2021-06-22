@@ -2,11 +2,12 @@ import React from 'react';
 import style from './scss/mobile-detail-info.module.scss';
 import messages from "../items/messages/messages";
 import _ from "lodash";
-const MobileDetailInfo = ({item})=>{
-    const detailImage = _.get(item, "detailImage",'');
-    const subTitle = _.get(item, "subTitle",'');
-    const title = _.get(item, "title",'');
-    return(
+
+const MobileDetailInfo = ({item}) => {
+    const detailImage = _.get(item, "detailImage", '');
+    const subTitle = _.get(item, "subTitle", '');
+    const title = _.get(item, "title", '');
+    return (
         <React.Fragment>
             <div className={style['mobile-card-info']}>
                 <div className={style['mobile-card-info-pic']}>

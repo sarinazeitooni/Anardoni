@@ -1,3 +1,4 @@
+@import './styles/variables';
 .detail-main-image-container{
   .detail-main-image{
     z-index: 3;
@@ -33,7 +34,7 @@
   margin-bottom: 25px;
 }
 .caption{
-  font-family: anardoni;
+  font-family: $font;
   border-radius: 4px;
   font-size: .93rem;
   padding: 8px;
@@ -41,7 +42,7 @@
   font-weight: 500;
   margin: 0 auto 17px auto ;
   text-align: center;
-  color: #0c5460;
-  background-color: #d1ecf1;
+  color: $detail-caption;
+  background-color: $detail-caption-background;
   direction: rtl;
 }

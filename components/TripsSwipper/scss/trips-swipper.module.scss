@@ -1,6 +1,7 @@
+@import './styles/variables';
 .second-swipper-container{
-  font-family: anardoni;
-  background-color: #222222;
+  font-family: $font;
+  background-color: $background;
   box-shadow: 0 0 20px #0b0b0b;
   height: fit-content;
   border-radius: 1.2em;
@@ -30,7 +31,7 @@
       }
       font-size: 0.92rem;
       text-align: left;
-      color: #007bff;
+      color: $card-info-colored;
       padding: 10px 1px;
       display: inline-block;
       width: 86%;

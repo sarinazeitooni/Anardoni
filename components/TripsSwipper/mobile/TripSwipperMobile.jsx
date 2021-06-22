@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import swiperAction from "../../../redux/action/action";
 import style from './scss/trip-swipper-mobile.module.scss'
 import messages from "../messages/messages";
-import MobileMySkeleton from "../../skeleton/mobile/Skeleton";
+import MobileSwiperSkeleton from "../../skeleton/mobile/Skeleton";
 import SmallCardMobile from "../../smallCard/mobile/SmallCardMobile";
 import {Swiper, SwiperSlide} from 'swiper/react';
 function TripSwipperMobile ({title}){
@@ -35,7 +35,7 @@ function TripSwipperMobile ({title}){
                 <div className={style['smallcards-mobile-container']}>
                     <Swiper spaceBetween={0} slidesPerView={1}>
                     {!result && (
-                        <MobileMySkeleton slides={4}/>
+                        <MobileSwiperSkeleton slides={4}/>
                     )}
                     {result && (result.map((item,index)=>{
                         return(

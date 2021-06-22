@@ -1,3 +1,4 @@
+@import "./styles/variables";
 .card-without-container-mobile{
   display: flex;
   flex-direction: row-reverse;
@@ -11,7 +12,7 @@
   }
   .card-without-container-detail-mobile{
     position: relative;
-    border-bottom: 1px solid #444;
+    border-bottom: $main-border;
     width: 100%;
     text-align: right;
     direction: rtl;
@@ -30,13 +31,13 @@
       padding-top: 4px;
       font-size: 13px;
       margin: 0;
-      color: #6c757d;
+      color: $card-subtitle ;
     }
     .get-button{
       left: 0;
       position: absolute;
       top: 10px;
-      color: #509def;
+      color: $card-get-button;
       background-color: #444;
       border-radius: 20px;
       width: 70px;

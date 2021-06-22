@@ -1,3 +1,4 @@
+@import "./styles/variables";
 .whats-new-container{
   @media screen and (max-width: 425px) {
     .right-text{
@@ -18,7 +19,7 @@
     font-size: 15.5px;
   }
   .right-text{
-    color: #6c757d;
+    color: $card-subtitle;
   }
   .about-items{
     direction: rtl;
@@ -31,12 +32,12 @@
     width: 50%;
     text-align: left;
     .version{
-      color: #6c757d;
+      color: $card-subtitle;
       font-size: .9em;
     }
     .colored-text{
       white-space: nowrap;
-      color: #375a7f;
+      color: $color-text;
       cursor: pointer;
       margin-bottom: 18px;
       font-size: .84em;
@@ -46,8 +47,8 @@
     width: 50%;
     text-align: right;
   }
-  font-family: anardoni;
-  border-bottom: 1px solid #444;
+  font-family: $font;
+  border-bottom: $main-border;
   color: white;
   margin: 25px auto 15px auto;
   width: 58%;

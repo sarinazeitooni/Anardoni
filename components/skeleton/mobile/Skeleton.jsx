@@ -1,7 +1,7 @@
 import React from 'react';
 import { Skeleton } from '@material-ui/lab';
 import style from './scss/Mobile-skeleton.module.scss'
-const MobileMySkeleton=(props)=>{
+const MobileSwiperSkeleton=(props)=>{
     let slidenum = [] ;
     for (let index = 1; index < props.slides; index++) {
         slidenum.push(index);
@@ -18,4 +18,4 @@ const MobileMySkeleton=(props)=>{
     )
 };
 
-export default MobileMySkeleton;
+export default MobileSwiperSkeleton;

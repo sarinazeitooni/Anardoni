@@ -2,11 +2,12 @@ import messages from "../items/messages/messages";
 import _ from "lodash";
 import style from './scss/mobile-detail-new-items.module.scss';
 import React from "react";
-const MobileDetailNewItems = ({item})=>{
-    const version=_.get(item,"version","");
-    const newItems=_.get(item,"newItems",['']);
-    const lastUpdate = _.get(item, "lastUpdate","");
-    return(
+
+const MobileDetailNewItems = ({item}) => {
+    const version = _.get(item, "version", "");
+    const newItems = _.get(item, "newItems", ['']);
+    const lastUpdate = _.get(item, "lastUpdate", "");
+    return (
         <React.Fragment>
             <div className={style['whats-new-container']}>
                 <div className={style['new-items']}>
@@ -15,9 +16,9 @@ const MobileDetailNewItems = ({item})=>{
                 </div>
                 <div className={style.versions}>
                     <div className={style['colored-text']}> {messages.versionHistory} </div>
-                        <div className={style['last-update-container']}>
-                            {lastUpdate}
-                        </div>
+                    <div className={style['last-update-container']}>
+                        {lastUpdate}
+                    </div>
                 </div>
             </div>
             <div className={style['about-items-container']}>

@@ -1,8 +1,9 @@
+@import './styles/variables';
 .preview{
   font-size: 16px;
   font-weight: bold;
   letter-spacing: -1px;
-  font-family: anardoni;
+  font-family: $font;
   color: white;
   width: 58%;
   padding-bottom: 18.5px;
@@ -15,7 +16,7 @@
   direction: rtl;
   .about{
     .info-title{
-      color: #6c757d;
+      color: $card-subtitle;
       width: 100px;
       margin-left: 20px;
       text-align: left;

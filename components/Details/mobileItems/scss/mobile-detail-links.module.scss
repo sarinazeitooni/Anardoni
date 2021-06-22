@@ -1,9 +1,10 @@
+@import './styles/variables';
 .link-container{
   width: 90%;
   margin: 5px auto;
   padding-bottom: 25px;
-  font-family: anardoni;
-  border-bottom: 1px solid #444;
+  font-family: $font;
+  border-bottom: $main-border;
   color: white;
   text-align: right;
   .link-title{
@@ -13,8 +14,8 @@
   .link{
     cursor: pointer;
     border-radius: 12px;
-    color: #0c5460;
-    background-color: #d1ecf1;
+    color: $detail-caption;
+    background-color: $detail-caption-background;
     font-weight: bold;
     padding: 1.25rem 1.25rem;
     white-space: nowrap;

@@ -6,6 +6,7 @@ import style from './scss/swiper-mobile.module.scss';
 import messages from "../../navigation/messages/messages";
 import cardData from "../../../data/CardData";
 import AccountCircleTwoToneIcon from '@material-ui/icons/AccountCircleTwoTone';
+
 function FirstSwipperMobile() {
     const data = cardData;
     return (

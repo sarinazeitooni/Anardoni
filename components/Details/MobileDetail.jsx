@@ -7,13 +7,14 @@ import MobileNewItems from "./mobileItems/MobileNewItems";
 import MobileDetailDescription from "./mobileItems/MobileDetailDescription";
 import MobileDetailLinks from "./mobileItems/MobileDetailLinks";
 import MobileDetailInformation from "./mobileItems/MobileDetailInformation";
-function MobileDetail({card}){
-    return(
+
+function MobileDetail({card}) {
+    return (
         <React.Fragment>
             <MobileNavigation/>
             <MobileDetailMainImage item={card}/>
             <MobileDetailInfo item={card}/>
-            <ThirdSwipper item={card} />
+            <ThirdSwipper item={card}/>
             <MobileNewItems item={card}/>
             <MobileDetailDescription item={card}/>
             <MobileDetailLinks item={card}/>

@@ -4,6 +4,7 @@
   url("../../../fonts/iranyekan/woff/iranyekanwebregularfanum.woff") format("woff"),
   url("../../../fonts/iranyekan/ttf/iranyekanwebregularfanum.ttf") format("truetype");
 }
+@import './styles/variables';
 .log-in-container{
   display: flex;
   flex-direction: row-reverse;
@@ -22,9 +23,9 @@
   }
 }
 .navigation-container{
-  border-bottom: 1px solid #444;
-  font-family: anardoni;
-  background-color: #222222;
+  border-bottom: $main-border;
+  font-family: $font;
+  background-color: $background;
   z-index: 4;
   position: relative;
   display: grid;
@@ -52,12 +53,12 @@
       border-bottom-right-radius: 0;
     }
     button{
-      font-family: anardoni;
+      font-family: $font;
       position: relative;
       cursor: pointer;
       outline: none;
       margin-left:2px;
-      background-color: #375A7F;
+      background-color: $color-text;
       border-radius: .25rem;
       border: none;
       color: white;
@@ -71,8 +72,8 @@
   }
   .selected{
     opacity: 1;
-    border-bottom: 3px solid #375a7f;
-    color: #375a7f !important;
+    border-bottom: 3px solid $color-text;
+    color: $color-text !important;
   }
   .item-container{
     margin: 0;
@@ -81,7 +82,11 @@
     .item{
       &:hover{
         opacity: 1;
-        border-bottom: 3px solid #375a7f;
+        border-bottom: 3px solid $color-text;
+      }
+      &:active{
+        opacity: 1;
+        border-bottom: 3px solid $color-text;
       }
       opacity: .8;
       transition: .2s border-bottom-color;
@@ -90,7 +95,7 @@
       float: right;
       padding: 12px 11px 10px 11px;
       font-size: 15.5px;
-      color: #888;
+      color: $navigation-item;
       svg{
         font-size: 27px;
         margin-left: 5px;
@@ -99,7 +104,11 @@
     div{
       width: 100%;
     }
-    li{
+    button{
+      border: none;
+      outline: none;
+      background: none;
+      font-family: $font;
       display: flex;
       flex-direction: row;
       justify-content: space-between;

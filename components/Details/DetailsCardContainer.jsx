@@ -8,8 +8,9 @@ import DetailAdImage from "./items/DetailAdImage";
 import DetailCardLink from "./items/DetailCardLink";
 import DetailCardInformation from "./items/DetailCardInformation";
 import FeedBack from "../feedback/feedback";
-const DetailsContainer = ({card})=>{
-    return(
+
+const DetailsContainer = ({card}) => {
+    return (
         <React.Fragment>
             <DetailMainImage item={card}/>
             <FeedBack/>

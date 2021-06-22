@@ -1,17 +1,25 @@
 @supports (-webkit-touch-callout: none) {
-  letter-spacing: -1px !important;
+    letter-spacing:  -1px !important;
 }
+
 html,
 body {
-  scroll-behavior: smooth;
-  background-color: #222222;
-  padding: 0;
-  margin: 0;
+    scroll-behavior: smooth;
+    background-color: #222222;
+    padding: 0;
+    margin: 0;
 }
+
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:target {
+    opacity: 1;
+    border-bottom: 3px solid #375a7f;
 }

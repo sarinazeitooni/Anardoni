@@ -1,9 +1,12 @@
+.mobile-skeleton{
+}
 .detail-image-skeleton{
   direction: rtl;
   text-align: right;
   width: 100%;
 }
-.title-skeleton-container-m{
-  display: flex;
-  flex-direction: row-reverse;
+.mobile-skeleton-title-container{
+  direction: rtl;
+  text-align: right;
+  margin: 10px 0;
 }

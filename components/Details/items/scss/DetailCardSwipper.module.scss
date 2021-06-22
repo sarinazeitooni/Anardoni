@@ -1,6 +1,7 @@
+@import './styles/variables';
 .preview{
   width: 58%;
-  border-bottom: 1px solid #444;
+  border-bottom: $main-border;
   color: white;
   text-align: right;
   margin: 11px auto;
@@ -9,6 +10,6 @@
     font-size: 16px;
     font-weight: bold;
     letter-spacing: -1px;
-  font-family: anardoni;
+    font-family: $font;
   }
 }

@@ -1,5 +1,6 @@
+@import './styles/variables';
 .swipper-container{
-  background-color: #222222;
+  background-color: $background;
   width: 97%;
   margin: 7px auto;
   overflow: hidden;

@@ -1,8 +1,9 @@
+@import './styles/variables';
 .preview{
   font-size: 16px;
   font-weight: bold;
   letter-spacing: -1px;
-  font-family: anardoni;
+  font-family: $font;
   color: white;
   direction: rtl;
   width: 90%;
@@ -17,14 +18,14 @@
   margin: 10px 0 26px 0;
   .about{
     padding: 11px 0;
-    border-bottom: 1px solid #444;
+    border-bottom: $main-border;
     font-weight: 200;
     display:flex;
     font-size: 17px;
     justify-content: space-between;
     flex-direction: row;
     .info-title{
-      color: #6c757d;
+      color: $card-subtitle;
       text-align: left;
     }
     .info-items{

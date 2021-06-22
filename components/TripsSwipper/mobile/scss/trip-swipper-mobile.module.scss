@@ -1,11 +1,11 @@
+@import './styles/variables';
 .second-swipper-mobile-container{
-  font-family: anardoni;
-  border-top: 1px solid #444;
+  font-family: $font;
+  border-top: $main-border;
   padding: 10px 0px;
   margin: 15px;
   .swipper-mobile-title{
     display: flex;
-
     flex-direction: row-reverse;
     .right-mobile-title{
       font-weight: bold;
@@ -16,7 +16,7 @@
     }
     .left-mobile-title{
       font-size: 14px;
-      color: #007bff;
+      color: $card-info-colored;
       width: 50%;
       text-align: left;
     }

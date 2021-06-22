@@ -1,8 +1,9 @@
 import React from "react";
-import style from '../scss/card.module.scss';
+import style from '../scss/card-detail.module.scss';
 import Image from 'next/image';
-const CardDetail=({detailImage,title,subTitle,id})=>{
-    return(
+
+const CardDetail = ({detailImage, title, subTitle, id}) => {
+    return (
         <div className={style['card-detail-container']}>
             <div className={style['card-detail-text']}>
                 <h4>{title}</h4>

@@ -1,9 +1,10 @@
+@import './styles/variables';
 .mobile-card-info{
   color: white;
   display: flex;
   flex-direction: row-reverse;
   margin: 15px 20px;
-  font-family: anardoni;
+  font-family: $font;
   .mobile-card-info-pic{
     img{
       width: 110px;
@@ -21,7 +22,7 @@
       font-size: 16px;
     }
     h4{
-      color: #6c757d;
+      color: $card-subtitle;
       font-size: 13px;
       font-weight: 200;
       margin: 4px 0;
@@ -31,7 +32,7 @@
         font-size: 14px;
         font-weight: 200;
         color: white;
-        background-color: #375a7f;
+        background-color: $color-text;
         border-radius: 20px;
         width: fit-content;
         padding: 5px 18px;
@@ -39,8 +40,8 @@
   }
 }
 .feedback-container{
-  font-family: anardoni;
-  color: #6c757d;
+  font-family: $font;
+  color: $card-subtitle;
   display: flex;
   flex-direction: row-reverse;
   margin: 15px;

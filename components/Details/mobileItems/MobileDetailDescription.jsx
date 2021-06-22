@@ -1,18 +1,20 @@
-import { useSelector , useDispatch } from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
 import style from './scss/mobile-detail-description.module.scss';
 import _ from "lodash";
 import messages from "../items/messages/messages";
 import React from "react";
-const MobileDetailDiscription = ({item})=>{
-    const more = _.get(item, "more",['']);
-    const about = _.get(item, "about",['']);
+
+const MobileDetailDiscription = ({item}) => {
+    const more = _.get(item, "more", ['']);
+    const about = _.get(item, "about", ['']);
     const btnValue = useSelector(state => state.btnValue);
     const dispatch = useDispatch();
+
     function btnToggle() {
         dispatch({
             type: "btnToggle"
         });
-        document.getElementById('more-mask').style.height="fitContent";
+        document.getElementById('more-mask').style.height = "fitContent";
     };
     return (
         <React.Fragment>
@@ -25,7 +27,8 @@ const MobileDetailDiscription = ({item})=>{
                         </li>
                     )}
                     <div className={style['more-container']}>
-                        <div className={style['item-container']} style={{height : btnValue ? "13px" : "fit-content"}} id='more-mask'>
+                        <div className={style['item-container']} style={{height: btnValue ? "13px" : "fit-content"}}
+                             id='more-mask'>
                             {more.map((item) => {
                                 return (
                                     <li style={{color: btnValue ? "gray" : "white"}} className={style['about-items']}>
@@ -35,7 +38,8 @@ const MobileDetailDiscription = ({item})=>{
                             })}
                         </div>
                         <div className={style['button-container']}>
-                            <button className={style['toggle-btn']} onClick={btnToggle}>{btnValue ? messages.more : messages.close }</button>
+                            <button className={style['toggle-btn']}
+                                    onClick={btnToggle}>{btnValue ? messages.more : messages.close}</button>
                         </div>
                     </div>
                 </div>

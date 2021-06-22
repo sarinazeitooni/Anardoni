@@ -1,3 +1,4 @@
+@import './styles/variables';
 .detail-main-image-mobile-container{
 width: 100%;
 }
@@ -10,16 +11,16 @@ width: 100%;
 .scrolled{
   @extend .back-button;
   transition: all 1s;
-  background-color: #222222;
+  background-color: $background;
   height: 50px;
-  border-bottom: 1px solid #444;
+  border-bottom: $main-border;
 }
 .none{
   display: none;
 }
 .back-button {
-  color: #375a7f;
-  font-family: anardoni;
+  color: $color-text;
+  font-family: $font;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -45,7 +46,7 @@ width: 100%;
 }
 .get-button{
   z-index: 10;
-  font-family: anardoni;
+  font-family: $font;
   right: 15px;
   display: block;
   position: fixed;
@@ -53,7 +54,7 @@ width: 100%;
   top: 12px;
   font-size: 14px;
   color: white;
-  background-color: #375a7f;
+  background-color: $color-text;
   border-radius: 20px;
   width: fit-content;
   padding: 2px 16px;

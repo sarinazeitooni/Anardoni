@@ -1,3 +1,4 @@
+@import './styles/variables';
 .whats-new-container{
   .preview-title{
     font-weight: bolder;
@@ -8,18 +9,18 @@
   }
   .right-text{
     font-size: 13px;
-    color: #6c757d;
+    color: $card-subtitle;
   }
   .versions{
     width: 50%;
     text-align: left;
     .version{
-      color: #6c757d;
+      color: $card-subtitle;
       font-size: .8em;
     }
     .colored-text{
       white-space: nowrap;
-      color: #375a7f;
+      color: $color-text;
       cursor: pointer;
       margin-bottom: 18px;
       font-size: .8em;
@@ -29,7 +30,7 @@
     width: 50%;
     text-align: right;
   }
-  border-top: 1px solid #444;
+  border-top: $main-border;
   font-family: anardoni;
   color: white;
   margin: 0px 15px 0 15px;
@@ -38,13 +39,13 @@
   flex-direction: row-reverse;
 }
 .last-update-container{
-  color: #6c757d;
+  color: $card-subtitle;
   direction: rtl;
   font-size: 13px;
 }
 .about-items-container{
-  font-family: anardoni;
-  border-bottom: 1px solid #444;
+  font-family: $font;
+  border-bottom: $main-border;
   margin: 0 15px;
   padding: 20px 0 9px 0 ;
   direction: rtl;
