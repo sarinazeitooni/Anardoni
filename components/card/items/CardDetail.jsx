@@ -10,7 +10,7 @@ const CardDetail = ({detailImage, title, subTitle, id}) => {
                 <p>{subTitle}</p>
             </div>
             <div className={style['card-detail-image']}>
-                <Image src={detailImage} width={76} alt='card-detail-image' height={76}/>
+                <Image width={76} alt='card-detail-image' src={detailImage} height={76}/>
             </div>
         </div>
     )

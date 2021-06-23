@@ -1,4 +1,4 @@
-{
+  {
   "name": "anardoni",
   "version": "0.1.0",
   "private": true,
@@ -31,6 +31,9 @@
     "swiper": "^6.7.0",
     "webp-loader": "^0.6.0"
   },
+    "jest": {
+      "testEnvironment": "jsdom"
+    },
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.2",
@@ -38,7 +41,10 @@
     "enzyme": "^3.11.0",
     "eslint": "^7.29.0",
     "eslint-plugin-react": "^7.24.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.5",
-    "jest-enzyme": "^7.1.2"
+    "jest-enzyme": "^7.1.2",
+    "jsdom": "16.6.0",
+    "jsdom-global": "3.0.2"
   }
 }

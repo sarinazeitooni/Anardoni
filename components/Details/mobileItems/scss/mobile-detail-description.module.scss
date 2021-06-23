@@ -26,6 +26,7 @@
     }
     .button-container{
       .toggle-btn{
+        outline: none;
         color: $color-text;
         background-color: transparent;
         cursor: pointer;

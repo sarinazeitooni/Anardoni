@@ -11,7 +11,7 @@ function MobileNavigation(){
     const [NavItemClass , SetNavItemClass] = useState('');
     useEffect(()=>{
         (router.pathname == '/') ? SetNavItemClass(style.selected) : SetNavItemClass('');
-    },[]);
+    },[router.pathname]);
     return(
             <div className={style['navigation-mobile-container']}>
                 <ul className={style['item-mobile-container']}>

@@ -36,6 +36,7 @@
         font-family: $font;
         font-size: .9rem;
         padding: 0;
+        outline: none;
         :focus {
           outline: none !important;
         }
