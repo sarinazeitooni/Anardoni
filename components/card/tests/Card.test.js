@@ -1,4 +1,3 @@
-import 'jsdom-global/register';
 import React from 'react';
 import { shallow } from 'enzyme';
 import Card from "../Card";
@@ -10,6 +9,6 @@ describe("Card component", () => {
             expect(card.length).toBe(1);
             const cardContainer =  card.find(<CardContainer/>);
             cardContainer.find(<CardDetail/>);
-            cardContainer.find(<CardDetail/>);
+            expect(card).toMatchSnapshot();
     });
 });

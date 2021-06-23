@@ -12,16 +12,18 @@ const SwiperSkeleton = (props) => {
         slidenum.push(index);
     }
     return (
-        slidenum.map((index) => {
-            return (
-                <div key={index} className={style['skeleton-container']}>
-                    <Skeleton animation="wave" variant="circle" width={100} height={100}/>
-                    <br/>
-                    <Skeleton animation="wave" variant="text" width={100} height={20}/>
-                    <Skeleton animation="wave" variant="rect" width={100} height={20}/>
-                </div>
-            )
-        })
+        <React.Fragment>
+            {slidenum.map((index) => {
+                return (
+                    <div key={index} className={style['skeleton-container']}>
+                        <Skeleton animation="wave" variant="circle" width={100} height={100}/>
+                        <br/>
+                        <Skeleton animation="wave" variant="text" width={100} height={20}/>
+                        <Skeleton animation="wave" variant="rect" width={100} height={20}/>
+                    </div>
+                )
+            })}
+        </React.Fragment>
     )
 };
 

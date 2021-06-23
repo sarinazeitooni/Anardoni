@@ -1,8 +1,8 @@
-import first from '../images/first.webp'
-import firstDetail from '../images/first-detail.jpeg'
-import second from '../images/secondImage.webp'
-import secondDetail from '../images/secondDetail.jpeg'
-import third from '../images/thirdImage.webp'
+import first from '../images/firstPic.webp';
+import firstDetail from '../images/first-detail.jpeg';
+import second from '../images/secondImage.webp';
+import secondDetail from '../images/secondDetail.jpeg';
+import third from '../images/thirdImage.webp';
 import thirdDetail from '../images/thirdDetail.webp';
 import firstPic from '../images/firstPic.webp';
 import secondPic from '../images/secondPic.webp';
@@ -20,6 +20,7 @@ import lastsmallcard from '../images/lastsmallcard.webp';
 import firstsmallcard from '../images/secondsmallcard.webp';
 import sixthsmallcard from '../images/sixthsmallcard.webp';
 import seventhsmallcard from '../images/seventhsmallcard.webp';
+
 const images={
     firstImage:first,
     firstDetailImage: firstDetail,

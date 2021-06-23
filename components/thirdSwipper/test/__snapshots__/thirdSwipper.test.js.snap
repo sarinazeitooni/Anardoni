@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Third swiper component should render div as props length 1`] = `ShallowWrapper {}`;

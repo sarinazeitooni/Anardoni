@@ -13,7 +13,7 @@ const ThirdSwipper = ({item}) => {
     return (
         <div className={style['screenshot-container']}>
             <Swiper spaceBetween={spaces} slidesPerView={slides}>
-                {previewImages.map((item) => <SwiperSlide>
+                {previewImages.map((item) =><SwiperSlide key={item}>
                     <img className={style['screenshot']} width={width} height={height} src={item}/>
                 </SwiperSlide>)}
             </Swiper>
