@@ -1,4 +1,4 @@
-import first from '../images/firstPic.webp';
+import first from '../images/first.webp';
 import firstDetail from '../images/first-detail.jpeg';
 import second from '../images/secondImage.webp';
 import secondDetail from '../images/secondDetail.jpeg';

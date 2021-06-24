@@ -10,12 +10,12 @@ import GamesSwipper from "../../gamesSwipper/GamesSwipper";
 describe("Main component", () => {
     it("should have 6 child component", () => {
         const main = shallow(<Main/>);
-        expect(main.find(<Navigation/>)).toBe(1);
-        expect(main.find(<FirstSwipper/>)).toBe(1);
-        expect(main.find(<FeedBack/>)).toBe(1);
-        expect(main.find(<TripsSwipper/>)).toBe(1);
-        expect(main.find(<FirstSwipper/>)).toBe(1);
-        expect(main.find(<GamesSwipper/>)).toBe(1);
+        expect(main.find(<Navigation/>)).toEqual({});
+        expect(main.find(<FirstSwipper/>)).toEqual({});
+        expect(main.find(<FeedBack/>)).toEqual({});
+        expect(main.find(<TripsSwipper/>)).toEqual({});
+        expect(main.find(<FirstSwipper/>)).toEqual({});
+        expect(main.find(<GamesSwipper/>)).toEqual({});
         expect(main).toMatchSnapshot();
     });
 });
