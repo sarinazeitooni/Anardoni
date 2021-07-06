@@ -19,4 +19,15 @@ module.exports = {
         '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
         '(webp|jpeg)$': 'identity-obj-proxy',
     },
+    "collectCoverage": true,
+    "coverageReporters": ["lcov"],
+    "coverageDirectory": "test-coverage",
+    "coverageThreshold": {
+        "global": {
+            "branches": 0,
+            "functions": 0,
+            "lines": 0,
+            "statements": 0
+        }
+    },
 }
