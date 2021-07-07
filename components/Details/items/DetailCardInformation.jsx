@@ -12,7 +12,7 @@ function DetailCardInformation({item}) {
             <div className={style['about-container']}>
                 {information.map((item) => {
                     return (
-                        <div>
+                        <div key={item}>
                             <div className={style.about}>
                                 <div className={style['info-title']}>{item.Title}</div>
                                 <span className={style['info-items']}

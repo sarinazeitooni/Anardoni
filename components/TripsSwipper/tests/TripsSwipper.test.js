@@ -6,10 +6,10 @@ import {Provider} from 'react-redux';
 describe(" Trip swiper component", () => {
     it("should have a swiper", () => {
         const swiper = shallow(<Provider store={store}> <SecondSwipper/></Provider>);
-        expect(swiper.find('Swiper').length).toBe(0);
         expect(swiper).toMatchSnapshot();
     });
-    it("should render correctly" , ()=>{
-        expect(shallow(<Provider store={store}> <SecondSwipper/></Provider>))
-    })
+    it("it should render a preview" ,()=>{
+        const swiper = shallow(<Provider store={store}> <SecondSwipper/></Provider>);
+        expect(swiper.find('div.more-container')).toBeTruthy();
+    });
 });

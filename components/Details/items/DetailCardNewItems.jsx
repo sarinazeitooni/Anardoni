@@ -14,7 +14,7 @@ const DetailCardNewItems = ({item}) => {
                     {
                         newItems.map((item) => {
                             return (
-                                <li className={style['about-items']}>{item} </li>
+                                <li key={item} className={style['about-items']}>{item} </li>
                             )
                         })
                     }
