@@ -27,7 +27,7 @@ const MobileDetailDiscription = ({item}) => {
                             {item}
                         </li>
                     )}
-                    <div className={style['more-container']}>
+                    <div className={style['more-container-mobile']}>
                         <div className={style['item-container']} style={{height: btnValue ? "13px" : "fit-content"}}
                              id='more-mask'>
                             {more.map((item) => {
