@@ -4,4 +4,4 @@ const swiperAction=()=>{
     }
 }
 
-export default swiperAction
+export default swiperAction;

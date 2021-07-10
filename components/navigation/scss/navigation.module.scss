@@ -79,19 +79,7 @@
     margin: 0;
     color: #888888;
     display: inline-block;
-    //span{
-    //  input{
-    //    display: none;
-    //    &:checked{
-    //      & + label{
-    //        button{
-    //          @extend .selected;
-    //        }
-    //      }
-    //    }
-    //  }
-    //}
-    .item{
+    .items{
       &:hover{
         @extend .selected;
       }
@@ -122,9 +110,4 @@
       justify-content: space-between;
     }
   }
-  //a{
-  //  &:target{
-  //    color: red;
-  //  }
-  //}
 }
