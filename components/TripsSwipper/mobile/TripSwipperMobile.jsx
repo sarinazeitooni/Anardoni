@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import swiperAction from "../../../redux/action/action";
+import swiperAction from "../../../redux/action/Swiperaction";
 import style from './scss/trip-swipper-mobile.module.scss'
 import messages from "../messages/messages";
 import MobileSwiperSkeleton from "../../skeleton/mobile/Skeleton";

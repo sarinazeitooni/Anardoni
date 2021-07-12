@@ -74,6 +74,7 @@
     opacity: 1 !important;
     border-bottom: 3px solid $color-text !important;
     color: $color-text !important;
+    @extend .items;
   }
   .item-container{
     margin: 0;

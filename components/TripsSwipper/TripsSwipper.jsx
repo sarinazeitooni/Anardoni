@@ -5,7 +5,7 @@ import messages from "./messages/messages";
 import {useSelector, useDispatch} from "react-redux";
 import SwiperSkeleton from "../skeleton/Skeleton";
 import SmallCardContainer from "../smallCard/SmallCardContainer";
-import swiperAction from "../../redux/action/action";
+import swiperAction from "../../redux/action/Swiperaction";
 import useDeviceDetect from "../../customHook/useDeviceDetect";
 
 function SecondSwipper({title}) {

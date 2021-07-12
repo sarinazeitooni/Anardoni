@@ -1,6 +1,7 @@
-const navigationAction=()=>{
+const navigationAction=(btn)=>{
     return{
-        type: "navigation"
+        type: "navigation",
+        payload : btn
     }
 }
 

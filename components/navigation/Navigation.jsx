@@ -10,7 +10,7 @@ import messages from "./messages/messages";
 import style from './scss/navigation.module.scss';
 import {useRouter} from 'next/router';
 import {useSelector, useDispatch} from "react-redux";
-import swiperAction from "../../redux/action/action";
+import swiperAction from "../../redux/action/Swiperaction";
 import navigationAction from "../../redux/action/navigationAction";
 import useDeviceDetect from "../../customHook/useDeviceDetect";
 function Navigation() {
@@ -20,11 +20,9 @@ function Navigation() {
     const [navigationBtn, setNavigationBtn] = useState(style.items);
     const [NavItemClass, SetNavItemClass] = useState('');
     const navigationBtnTimeout = useSelector(state => state.navigationBtn);
-    const [styles, setStyles] = useState(navigationBtn ? style.items : style.selected);
     console.log(isMobile);
-    const btnChange = () => {
-        dispatch(navigationAction());
-        setStyles(navigationBtn.item ? style.items : style.selected)
+    const btnChange =(btn) => {
+        dispatch(navigationAction(btn));
     }
     useEffect(() => {
         setTimeout(() => {
@@ -34,37 +32,34 @@ function Navigation() {
     useEffect(() => {
         (router.pathname == '/') ? SetNavItemClass(style.selected) : SetNavItemClass('');
     }, []);
-    useEffect(()=>{
-        setStyles(navigationBtn ? style.items : style.selected)
-    },[navigationBtn])
+
     return (
 
         <div className={style['navigation-container']}>
             <ul className={style['item-container']}>
                 <button onClick={() => {
-                    btnChange()
-                }} className={style.items + " " + styles}><a
+                    btnChange('first')
+                }} className={navigationBtn == 'first' ? style.selected : style.items}><a
                     href='#home'>{messages.home}</a>
                     <HomeTwoToneIcon/></button>
                 <button onClick={() => {
-                    btnChange()
-                }}
-                        className={style.items + " " + styles}><a
+                    btnChange('second')
+                }} className={navigationBtn == 'second' ? style.selected : style.items}><a
                     href='#apps'>{messages.apps}</a><LayersIcon/>
                 </button>
                 <button onClick={() => {
-                    btnChange()
-                }} className={style.items + " " + styles}><a
+                    btnChange('third')
+                }} className={navigationBtn == 'third' ? style.selected : style.items}><a
                     href='#games'>{messages.games}</a><WhatshotIcon/>
                 </button>
                 <button onClick={() => {
-                    btnChange()
-                }} className={style.items + " " + styles}><a
+                    btnChange('forth')
+                }}  className={navigationBtn == 'forth' ? style.selected : style.items}><a
                     href='#categories'>{messages.categories}</a>
                     <CategoryTwoToneIcon/></button>
                 <button onClick={() => {
-                    btnChange()
-                }} className={style.items + " " + styles}><a
+                    btnChange('fifth')
+                }} className={navigationBtn == 'fifth' ? style.selected : style.items}><a
                     href='#search'>{messages.search}</a>
                     <SearchTwoToneIcon/></button>
             </ul>
