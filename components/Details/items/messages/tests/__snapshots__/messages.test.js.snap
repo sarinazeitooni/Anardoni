@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navigation component snapshot 1`] = `
+Object {
+  "age": "سن",
+  "backBtn": "برگشت",
+  "close": "بستن",
+  "description": "توضیحات",
+  "feedback": "بازخورد",
+  "free": "رایگان",
+  "getbtn": "دریافت",
+  "information": "اطلاعات",
+  "linkTitle": "لینک های مفید",
+  "more": "بیشتر",
+  "swipperTitle": "پیش نمایش",
+  "version": " نسخه ",
+  "versionHistory": "نمایش تاریخچه ورژن ها",
+  "whatsNew": "جدید چه خبره؟",
+}
+`;

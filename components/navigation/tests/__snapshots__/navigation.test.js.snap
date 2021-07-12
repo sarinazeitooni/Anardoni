@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`navigation component should render a div 1`] = `ShallowWrapper {}`;
+exports[`navigation component snapshot 1`] = `ShallowWrapper {}`;

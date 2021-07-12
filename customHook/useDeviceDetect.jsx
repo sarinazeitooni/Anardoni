@@ -1,11 +1,13 @@
-import React, {useEffect,useState} from "react";
-const useDeviceDetect = ()=>{
+import React, {useEffect, useState} from "react";
+
+const useDeviceDetect = () => {
     const [isMobile, setMobile] = useState(false);
-    const [width,setWidth] = useState(null);
-    useEffect(()=>{
+    const [width, setWidth] = useState(null);
+    useEffect(() => {
         setWidth(window.outerWidth);
-    },[width]);
-    (width > 600) ? setMobile(true) : setMobile(false);
-    return(isMobile);
+        setMobile(width > 600 ? false : true)
+    }, [typeof window !== "undefined" && window.outerWidth]);
+    console.log(width)
+    return isMobile;
 }
-export default useDeviceDetect();
+export default useDeviceDetect;

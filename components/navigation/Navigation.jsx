@@ -12,16 +12,16 @@ import {useRouter} from 'next/router';
 import {useSelector, useDispatch} from "react-redux";
 import swiperAction from "../../redux/action/action";
 import navigationAction from "../../redux/action/navigationAction";
-
+import useDeviceDetect from "../../customHook/useDeviceDetect";
 function Navigation() {
+    const isMobile = useDeviceDetect;
     const dispatch = useDispatch();
     const router = useRouter();
-
     const [navigationBtn, setNavigationBtn] = useState(style.items);
     const [NavItemClass, SetNavItemClass] = useState('');
     const navigationBtnTimeout = useSelector(state => state.navigationBtn);
     const [styles, setStyles] = useState(navigationBtn ? style.items : style.selected);
-
+    console.log(isMobile);
     const btnChange = () => {
         dispatch(navigationAction());
         setStyles(navigationBtn.item ? style.items : style.selected)
@@ -38,8 +38,8 @@ function Navigation() {
         setStyles(navigationBtn ? style.items : style.selected)
     },[navigationBtn])
     return (
-        <div className={style['navigation-container']}>
 
+        <div className={style['navigation-container']}>
             <ul className={style['item-container']}>
                 <button onClick={() => {
                     btnChange()

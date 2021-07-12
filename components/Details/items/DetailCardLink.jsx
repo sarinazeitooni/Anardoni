@@ -12,7 +12,7 @@ function DetailCardLink({item}) {
                     {
                         item.links.map((link) => {
                             return (
-                                <div>
+                                <div key={link} className={style['links']}>
                                     <h3 className={style['link-title']}>{messages.linkTitle}</h3>
                                     <div className={style.link}><span> <ArrowBackIosIcon/> </span> {link}</div>
                                 </div>
@@ -23,5 +23,5 @@ function DetailCardLink({item}) {
             }
         </React.Fragment>
     )
-};
+}
 export default DetailCardLink;

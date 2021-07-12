@@ -5,7 +5,10 @@ describe("swiper skeleton component", () => {
     it("should render div as props length", () => {
         const skeleton = shallow(<SwiperSkeleton />);
         expect(skeleton.length).toBe(1);
-        // expect(skeleton.find("div").length).toBe(10);
         expect(skeleton).toMatchSnapshot();
     });
+    it("should render a div" , ()=>{
+        const skeleton = shallow(<SwiperSkeleton />);
+        expect(skeleton.find("div .skeleton-container")).toBeTruthy();
+    })
 });
