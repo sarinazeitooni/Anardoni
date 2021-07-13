@@ -15,5 +15,5 @@ describe("navigation component", () => {
     });
     it("snapshot" , ()=>{
         expect(navigation).toMatchSnapshot();
-    })
+    });
 });
