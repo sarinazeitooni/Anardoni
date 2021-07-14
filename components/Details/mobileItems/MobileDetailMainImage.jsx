@@ -25,7 +25,6 @@ const MobileDetailMainImage = ({item}) => {
             </Link>
             <img className={style[navbarFixed ? 'detail-image-top' : 'none']} src={detail}/>
             <div className={style[navbarFixed ? 'get-button' : 'none']}>{messages.getbtn}</div>
-
             <div className={style['detail-main-image-mobile']}
                  style={{
                      backgroundImage: `url(

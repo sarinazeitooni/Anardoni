@@ -1,19 +1,14 @@
 import React, {useState} from 'react';
 import {Skeleton} from '@material-ui/lab';
 import style from './scss/skeleton.module.scss'
-
 const SwiperSkeleton = (props) => {
-    // const [slideNum , setSlideNum] = useState([]);
-    // for (let index = 1; index < props.slides; index++) {
-    //     setSlideNum([slideNum.push(index)]);
-    // }
-    let slidenum = [];
+    let slideNum = [];
     for (let index = 1; index < props.slides; index++) {
-        slidenum.push(index);
+        slideNum.push(index);
     }
     return (
         <React.Fragment>
-            {slidenum.map((index) => {
+            {slideNum.map((index) => {
                 return (
                     <div key={index} className={style['skeleton-container']}>
                         <Skeleton animation="wave" variant="circle" width={100} height={100}/>

@@ -5,9 +5,7 @@ import TripsSwipper from "../TripsSwipper/TripsSwipper";
 import FeedBack from "../feedback/feedback";
 import messages from "../TripsSwipper/messages/messages";
 import GamesSwipper from "../gamesSwipper/GamesSwipper";
-
 function Main() {
-
     return (
         <React.Fragment>
             <Navigation/>

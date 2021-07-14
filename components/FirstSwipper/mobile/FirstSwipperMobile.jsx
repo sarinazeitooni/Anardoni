@@ -31,8 +31,6 @@ function FirstSwipperMobile() {
                 )}
             </Swiper>
         </React.Fragment>
-
-
     )
 };
 export default FirstSwipperMobile;

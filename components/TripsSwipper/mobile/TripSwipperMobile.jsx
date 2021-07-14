@@ -7,7 +7,6 @@ import MobileSwiperSkeleton from "../../skeleton/mobile/Skeleton";
 import SmallCardMobile from "../../smallCard/mobile/SmallCardMobile";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import useDeviceDetect from "../../../customHook/useDeviceDetect";
-
 function TripSwipperMobile({title}) {
     const [swipperData, setSwipperData] = useState(null);
     const dispatch = useDispatch();
@@ -28,9 +27,7 @@ function TripSwipperMobile({title}) {
     useEffect(() => {
 
     }, [result]);
-
     console.log(isMobile, "IS_MOBILE_CALLED")
-
     return (
         <div className={style['second-swipper-mobile-container']}>
             <div className={style['swipper-mobile-title']}>
@@ -54,5 +51,5 @@ function TripSwipperMobile({title}) {
             </div>
         </div>
     )
-};
-export default TripSwipperMobile
+}
+export default TripSwipperMobile;

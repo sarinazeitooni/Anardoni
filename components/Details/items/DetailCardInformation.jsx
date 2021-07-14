@@ -19,7 +19,7 @@ function DetailCardInformation({item}) {
                                       style={{color: item.color}}>{item.description}</span>
                             </div>
                             <MobileView>
-                                <div className='line'></div>
+                                <div className='line'/>
                             </MobileView>
                         </div>
                     );

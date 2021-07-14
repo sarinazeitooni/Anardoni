@@ -41,5 +41,5 @@ function SecondSwipper({title}) {
                 }
             </Swiper>
         </div>)
-};
+}
 export default SecondSwipper;

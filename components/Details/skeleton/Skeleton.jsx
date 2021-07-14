@@ -3,6 +3,7 @@ import {Skeleton} from '@material-ui/lab';
 import style from './scss/detail-skeleton.module.scss';
 
 function DetailSkeleton() {
+    const wave = new Array(3);
     return (
         <React.Fragment>
             <div className={style['main-image-skeleton']}>
@@ -22,9 +23,9 @@ function DetailSkeleton() {
                 <Skeleton animation="wave" variant="text" width={100} height={25}/>
             </div>
             <div className={style['swiper-skeleton-container']}>
-                <Skeleton animation="wave" variant="rect" width={250} height={320}/>
-                <Skeleton animation="wave" variant="rect" width={250} height={320}/>
-                <Skeleton animation="wave" variant="rect" width={250} height={320}/>
+                {wave.map((item)=>{return(
+                    <Skeleton key={item} animation="wave" variant="rect" width={250} height={320}/>
+                )})}
                 <Skeleton animation="wave" variant="rect" width={150} height={320}/>
             </div>
         </React.Fragment>

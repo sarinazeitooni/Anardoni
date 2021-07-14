@@ -2,7 +2,6 @@ import React from 'react';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import messages from "../items/messages/messages";
 import style from './scss/mobile-detail-links.module.scss';
-
 function MobileDetailLinks({item}) {
     return (
         <React.Fragment>
@@ -23,7 +22,5 @@ function MobileDetailLinks({item}) {
             }
         </React.Fragment>
     )
-
 }
-
 export default MobileDetailLinks;
