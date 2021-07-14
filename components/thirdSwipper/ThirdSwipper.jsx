@@ -7,9 +7,9 @@ import {useState} from "react";
 const ThirdSwipper = ({item}) => {
     const previewImages = _.get(item, "previewImages", ['']);
     const [spaces , setSpaces] = useState(1);
-    const [slides , setSlides] = useState(isMobile ? 1.6 : 3.7);
-    const [width , setWidth] = useState(isMobile ? 251 : '280px');
-    const [height , setHeight] = useState(isMobile ? 444 : 490);
+    const [slides , setSlides] = useState(isMobile ? 2 : 3.7);
+    const [width , setWidth] = useState(isMobile ? '90%' : '280px');
+    const [height , setHeight] = useState(isMobile ? 256 : 490);
     return (
         <div className={style['screenshot-container']}>
             <Swiper spaceBetween={spaces} slidesPerView={slides}>

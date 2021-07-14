@@ -9,13 +9,12 @@ const MobileDetailDiscription = ({item}) => {
     const about = _.get(item, "about", ['']);
     const btnValue = useSelector(state => state.btnValue);
     const dispatch = useDispatch();
-    const Mask = document.querySelector("#more-mask");
 
     function btnToggle() {
         dispatch({
             type: "btnToggle"
         });
-        Mask.style.height = "fitContent";
+        document.getElementById('more-mask').style.height = "fitContent";
     };
     return (
         <React.Fragment>
