@@ -10,7 +10,7 @@ describe("detail card component", () => {
     }
     const mockStore = configureStore();
     let store = mockStore(initialState);
-    const container = shallow(<Provider store={store}><DetailCardDescription/></Provider>);
+    const container = shallow(<DetailCardDescription/>);
     it("it should render a div", () => {
         expect(container).toMatchSnapshot();
     });

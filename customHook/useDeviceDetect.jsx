@@ -1,13 +1,18 @@
-import React, {useEffect, useState} from "react";
+import React, {useMemo} from "react";
+const useViewport = () => {
+    const [width, setWidth] = React.useState(typeof window!=="undefined" && window.innerWidth);
 
-const useDeviceDetect = () => {
-    const [isMobile, setMobile] = useState(false);
-    const [width, setWidth] = useState(null);
-    useEffect(() => {
-        setWidth(window.outerWidth);
-        setMobile(width > 600 ? false : true)
-    }, [typeof window !== "undefined" && window.outerWidth]);
-    console.log(width);
-    return isMobile;
+
+    React.useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+
+
+
+    // Return the width so we can use it in our components
+    return width<425 ? true : false;
 }
-export default useDeviceDetect;
+
+export default useViewport

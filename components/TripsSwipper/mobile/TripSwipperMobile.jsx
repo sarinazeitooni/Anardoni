@@ -7,10 +7,11 @@ import MobileSwiperSkeleton from "../../skeleton/mobile/Skeleton";
 import SmallCardMobile from "../../smallCard/mobile/SmallCardMobile";
 import {Swiper, SwiperSlide} from 'swiper/react';
 import useDeviceDetect from "../../../customHook/useDeviceDetect";
+import useViewport from "../../../customHook/useDeviceDetect";
 function TripSwipperMobile({title}) {
     const [swipperData, setSwipperData] = useState(null);
     const dispatch = useDispatch();
-    const isMobile = useDeviceDetect()
+    const isMobile = useViewport();
     const swipperDataForTimeOut = useSelector(state => state.swipper);
     const devider = 3;
     let result;
