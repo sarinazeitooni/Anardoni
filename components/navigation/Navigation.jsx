@@ -5,7 +5,6 @@ import messages from "./messages/messages";
 import style from './scss/navigation.module.scss';
 import {useRouter} from 'next/router';
 import {useSelector, useDispatch} from "react-redux";
-import swiperAction from "../../redux/action/Swiperaction";
 import navigationAction from "../../redux/action/navigationAction";
 import useViewPort from "../../customHook/useDeviceDetect"
 
@@ -18,7 +17,7 @@ function Navigation() {
     const [navigationBtn, setNavigationBtn] = useState(style.items);
     const [NavItemClass, SetNavItemClass] = useState('');
     const navigationBtnTimeout = useSelector(state => state.navigationBtn);
-
+    console.log(isMobile);
     const btnChange = (btn) => {
         dispatch(navigationAction(btn));
     }

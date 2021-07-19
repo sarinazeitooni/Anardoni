@@ -1,4 +1,4 @@
-import React, {useMemo} from "react";
+import React from "react";
 const useViewport = () => {
     const [width, setWidth] = React.useState(typeof window!=="undefined" && window.innerWidth);
 
@@ -9,10 +9,7 @@ const useViewport = () => {
         return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
 
-
-
-    // Return the width so we can use it in our components
-    return width<425 ? true : false;
+    return width<700;
 }
 
 export default useViewport
