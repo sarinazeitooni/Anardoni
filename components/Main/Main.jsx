@@ -5,9 +5,16 @@ import TripsSwipper from "../TripsSwipper/TripsSwipper";
 import FeedBack from "../feedback/feedback";
 import messages from "../TripsSwipper/messages/messages";
 import GamesSwipper from "../gamesSwipper/GamesSwipper";
+import useViewport from "../../customHook/useDeviceDetect";
+import MobileNavigation from "../navigation/mobile/MobileNavigation";
+
 function Main() {
+    const isMobile = useViewport();
     return (
         <React.Fragment>
+            {/*{isMobile ? <MobileNavigation/>*/}
+            {/*    : <Navigation/>*/}
+            {/*}*/}
             <Navigation/>
             <FirstSwipper/>
             <FeedBack/>
