@@ -3,7 +3,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import style from './scss/trips-swipper.module.scss';
 import messages from "./messages/messages";
 import {useSelector, useDispatch} from "react-redux";
-import SwiperSkeleton from "../skeleton/Skeleton";
+import SwiperSkeleton from "../skeleton/SwiperSkeleton";
 import SmallCardContainer from "../smallCard/SmallCardContainer";
 import swiperAction from "../../redux/action/Swiperaction";
 import useDeviceDetect from "../../customHook/useDeviceDetect";

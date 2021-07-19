@@ -1,14 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import SwiperSkeleton from "../Skeleton";
+import SwiperSkeleton from "../SwiperSkeleton";
 describe("swiper skeleton component", () => {
+    const skeleton = shallow(<SwiperSkeleton slides={3} />);
+
     it("should render div as props length", () => {
-        const skeleton = shallow(<SwiperSkeleton />);
         expect(skeleton.length).toBe(1);
         expect(skeleton).toMatchSnapshot();
     });
     it("should render a div" , ()=>{
-        const skeleton = shallow(<SwiperSkeleton />);
-        expect(skeleton.find("div .skeleton-container")).toBeTruthy();
+        const items = skeleton.find("div .skeleton-container");
+        expect(items).toBeTruthy()
     })
 });

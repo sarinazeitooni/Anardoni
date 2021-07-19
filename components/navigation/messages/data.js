@@ -34,7 +34,6 @@ const Data = [
         text: messages.search,
         icon : <SearchTwoToneIcon/>,
         href : '#search'
-    },
-
+    }
 ]
 export default Data;

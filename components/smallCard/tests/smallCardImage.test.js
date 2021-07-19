@@ -6,5 +6,9 @@ describe("SmallCardImage component" , ()=>{
         const container = shallow(<SmallCardImage cardImage={"test"}/>);
         expect(container).toMatchSnapshot();
     });
+    it("it should render an img",()=>{
+        const container = shallow(<SmallCardImage cardImage={"test"}/>);
+        expect(container.find('img')).toBeTruthy();
+    });
 
 });
