@@ -21,17 +21,17 @@ const DetailCardDescription = ({item}) => {
             <span className={style['preview-title']}>{messages.description}</span>
             <div className={style['about-items-container']}>
                 {description && <div>{description}</div>}
-                {about.map((item) =>
-                    <li className={style['description-items']}>
+                {about.map((item,index) =>
+                    <li key={index} className={style['description-items']}>
                         {item}
                     </li>
                 )}
                 <div className={style['more-container']}>
                     <div className={style['item-container']} style={{height: btnValue ? "13px" : "fit-content"}}
                          id='more-mask'>
-                        {more.map((item) => {
+                        {more.map((item,index) => {
                             return (
-                                <li style={{color: btnValue ? "gray" : "white"}} className={style['about-items']}>
+                                <li key={index} style={{color: btnValue ? "gray" : "white"}} className={style['about-items']}>
                                     {item}
                                 </li>
                             )

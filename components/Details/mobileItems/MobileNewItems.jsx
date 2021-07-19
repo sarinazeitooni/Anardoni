@@ -23,9 +23,9 @@ const MobileDetailNewItems = ({item}) => {
             </div>
             <div className={style['about-items-container']}>
                 {
-                    newItems.map((item) => {
+                    newItems.map((item, index) => {
                         return (
-                            <li className={style['about-items']}>{item}</li>
+                            <li key={index} className={style['about-items']}>{item}</li>
                         )
                     })
                 }

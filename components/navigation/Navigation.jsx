@@ -17,7 +17,6 @@ function Navigation() {
     const [navigationBtn, setNavigationBtn] = useState(style.items);
     const [NavItemClass, SetNavItemClass] = useState('');
     const navigationBtnTimeout = useSelector(state => state.navigationBtn);
-    console.log(isMobile);
     const btnChange = (btn) => {
         dispatch(navigationAction(btn));
     }
@@ -32,9 +31,9 @@ function Navigation() {
     return (
         <div className={style['navigation-container']}>
             <ul className={style['item-container']}>
-                {Data.map((item) => {
+                {Data.map((item,index) => {
                         return (
-                            <button onClick={() => {
+                            <button key={index} onClick={() => {
                                 btnChange(item.number)
                             }} className={navigationBtn == item.number ? style.selected : style.items}><a
                                 href={item.href}>{item.text}</a>{item.icon}</button>

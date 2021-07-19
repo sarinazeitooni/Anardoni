@@ -10,9 +10,9 @@ function DetailCardInformation({item}) {
             <div className={style.preview}>
                 <span className={style['preview-title']}>{messages.information}</span>
                 <div className={style['about-container']}>
-                    {information.map((item) => {
+                    {information.map((item,index) => {
                         return (
-                            <div>
+                            <div key={index}>
                                 <div className={style.about}>
                                     <div className={style['info-title']}>{item.Title}</div>
                                     <span className={style['info-items']}

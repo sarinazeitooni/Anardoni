@@ -19,12 +19,9 @@ function TripSwipperMobile({title}) {
 
         }, 1000);
     }, [swipperDataForTimeOut]);
-    swipperData ? (result = new Array(Math.ceil(swipperData.length / devider))
+    swipperData && (result = new Array(Math.ceil(swipperData.length / devider))
             .fill().map(_ => swipperData.splice(0, devider))
-    ) : '';
-    useEffect(() => {
-
-    }, [result]);
+    );
     return (
         <div className={style['second-swipper-mobile-container']}>
             <div className={style['swipper-mobile-title']}>

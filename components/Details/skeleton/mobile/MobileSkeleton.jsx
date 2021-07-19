@@ -1,7 +1,6 @@
 import React from 'react';
 import {Skeleton} from '@material-ui/lab';
 import style from './scss/mobile-skeleton.module.scss';
-
 function MobileDetailSkeleton() {
     return (
             <div className={style['mobile-skeleton']}>

@@ -3,16 +3,17 @@ import style from './scss/DetailCardInformation.module.scss';
 import messages from "./messages/messages";
 import {MobileView} from 'react-device-detect';
 import _ from "lodash";
-
+import useViewport from "../../../customHook/useDeviceDetect";
 function DetailCardInformation({item}) {
+    const isMobile = useViewport();
     const information = _.get(item, "information", ['']);
     return (
         <div className={style.preview}>
             <span className={style['preview-title']}>{messages.information}</span>
             <div className={style['about-container']}>
-                {information.map((item) => {
+                {information.map((item,index) => {
                     return (
-                        <div key={item}>
+                        <div key={index}>
                             <div className={style.about}>
                                 <div className={style['info-title']}>{item.Title}</div>
                                 <span className={style['info-items']}
@@ -27,5 +28,5 @@ function DetailCardInformation({item}) {
             </div>
         </div>
     )
-};
-export default DetailCardInformation
+}
+export default DetailCardInformation;
