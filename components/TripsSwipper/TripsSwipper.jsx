@@ -6,13 +6,10 @@ import {useSelector, useDispatch} from "react-redux";
 import SwiperSkeleton from "../skeleton/SwiperSkeleton";
 import SmallCardContainer from "../smallCard/SmallCardContainer";
 import swiperAction from "../../redux/action/Swiperaction";
-import useDeviceDetect from "../../customHook/useDeviceDetect";
-import useViewport from "../../customHook/useDeviceDetect";
 
 function SecondSwipper({title}) {
     const [swipperData, setSwipperData] = useState(null);
     const dispatch = useDispatch();
-    const isMobile = useViewport();
     const swipperDataForTimeOut = useSelector(state => state.swipper);
     useEffect(() => {
         dispatch(swiperAction());
