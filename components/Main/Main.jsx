@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import Navigation from "../navigation/Navigation";
 import FirstSwipper from "../FirstSwipper/FirstSwipper";
-import TripsSwipper from "../TripsSwipper/TripsSwipper";
+import TripsSwipper from "../TripsSwipper/SecondSwipper";
 import FeedBack from "../feedback/feedback";
 import messages from "../TripsSwipper/messages/messages";
 import GamesSwipper from "../gamesSwipper/GamesSwipper";

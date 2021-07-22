@@ -17,7 +17,7 @@ function SecondSwipper({title}) {
             setSwipperData(swipperDataForTimeOut);
 
         }, 1000);
-    }, [swipperDataForTimeOut])
+    }, [swipperDataForTimeOut]);
     return (
         <div className={style['second-swipper-container']}>
             <div className={style['swipper-title']}>

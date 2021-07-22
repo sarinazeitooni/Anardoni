@@ -1,5 +1,5 @@
 import React from 'react';
-import SecondSwipper from "../TripsSwipper/TripsSwipper";
+import SecondSwipper from "../TripsSwipper/SecondSwipper";
 import messages from "./messages/messages";
 
 function GamesSwipper() {
