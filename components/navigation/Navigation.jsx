@@ -41,9 +41,9 @@ function Navigation() {
                 })}
             </ul>
             <div className={style['log-in-container']}>
-                <button className={style['right-btn']}>{messages.signup}<AddCircleIcon/></button>
+                <button className={style['right-btn']}><a href='/register'>{messages.signup}<AddCircleIcon/></a> </button>
                 <span className={style['black-circle']}/>
-                <button className={style['left-btn']}><VpnKeyIcon/>{messages.login}</button>
+                <button className={style['left-btn']}><a href='/login'><VpnKeyIcon/>{messages.login}</a> </button>
             </div>
         </div>
     )
