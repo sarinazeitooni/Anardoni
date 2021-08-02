@@ -9,7 +9,7 @@ const Data = [
         number: 'first',
         text: messages.home,
         icon : <HomeTwoToneIcon/>,
-        href : '#home'
+        href : '/'
     },
     {
         number: 'second',
