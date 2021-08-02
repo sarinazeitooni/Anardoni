@@ -1,9 +1,12 @@
 import React from 'react';
-function RegisterContainer(){
-    return(
+import Navigation from "../navigation/Navigation";
+
+function RegisterContainer() {
+    return (
         <React.Fragment>
-reg
+            <Navigation/>
         </React.Fragment>
     )
 }
+
 export default RegisterContainer;
