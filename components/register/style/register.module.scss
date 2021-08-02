@@ -1,0 +1,76 @@
+@import '../../../styles/variables';
+.register-container{
+  box-shadow: 0 0 20px #0b0b0b;
+  padding: 30px 30px 10px 30px;
+  margin: 80px auto;
+  background-color: $background;
+  border-radius: 10px;
+  max-width: 500px;
+  .input-container {
+    margin-top: 50px;
+    .input {
+      text-align: right;
+      color: white;
+      &:nth-child(2){
+        margin-left: 4px;
+      }
+      &:nth-child(1){
+        margin-right: 4px;
+      }
+      &:nth-child(2) , &:nth-child(1){
+        display: inline-block;
+        width: 49%;
+      }
+      &:focus {
+        transition: border .1s linear;
+        border: 1px solid $submit;
+      }
+      border: $main-border;
+      &::placeholder {
+        font-family: anardoni;
+        font-size: 15px;
+      }
+    }
+    input, .submit-btn {
+      outline: none;
+      padding: .55rem .75rem;
+      background-color: transparent;
+      border-radius: 8px;
+      border-width: 2px !important;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .submit-btn {
+      cursor: pointer;
+      background-color: $submit;
+      border: none;
+      font-size: 15px;
+      display: block;
+      font-family: anardoni;
+      color: white;
+    }
+  }
+  .rules {
+    color: $card-subtitle;
+    border-bottom: 1px dotted $card-subtitle;
+    display: table;
+    margin: 30px auto;
+    font-size: 12px;
+  }
+  .login , .rules{
+    cursor: pointer;
+  }
+  .login{
+    margin-right: 160px;
+    font-size: 13px;
+    color: $signUp;
+    padding-left: 15px;
+    float: right;
+    border-bottom: 1px dotted $signUp;
+    svg{
+      transform: rotate(180deg);
+      position: absolute;
+      right: 220px;
+    }
+  }
+}
