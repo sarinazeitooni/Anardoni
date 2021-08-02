@@ -4,6 +4,7 @@
   padding: 30px 30px 10px 30px;
   font-family: anardoni;
   margin: 80px auto;
+  direction: rtl;
   background-color: $background;
   border-radius: 10px;
   max-width: 500px;
@@ -12,15 +13,18 @@
     .input {
       text-align: right;
       color: white;
-      &:nth-child(2){
+      &:nth-child(1){
         margin-left: 4px;
       }
-      &:nth-child(1){
+      &:nth-child(2){
         margin-right: 4px;
       }
-      &:nth-child(2) , &:nth-child(1){
+      &:nth-child(1) , &:nth-child(2){
         display: inline-block;
         width: 49%;
+        @media screen and (max-width: 600px){
+          width: 47%;
+        }
       }
       &:focus {
         transition: border .1s linear;
@@ -39,6 +43,9 @@
       border-radius: 8px;
       border-width: 2px !important;
       width: 100%;
+      @media screen and (max-width : 600px){
+        width: 97%;
+      }
       margin-bottom: 10px;
     }
     .submit-btn {
@@ -57,12 +64,18 @@
     display: table;
     margin: 30px auto;
     font-size: 12px;
+    @media screen and (max-width: 600px){
+      font-size: 9.5px;
+    }
   }
   .login , .rules{
     cursor: pointer;
   }
   .login{
     margin-right: 160px;
+    @media screen and (max-width: 600px){
+      margin-right: 95px;
+    }
     font-size: 13px;
     position: relative;
     color: $signUp;
