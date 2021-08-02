@@ -63,14 +63,16 @@
   .login{
     margin-right: 160px;
     font-size: 13px;
+    position: relative;
     color: $signUp;
-    padding-left: 15px;
+    padding-left: 20px;
     float: right;
     border-bottom: 1px dotted $signUp;
     svg{
       transform: rotate(180deg);
       position: absolute;
-      right: 220px;
+      right: 108px;
+      top: -3px;
     }
   }
 }

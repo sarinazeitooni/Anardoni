@@ -14,7 +14,7 @@ function RegisterContainer() {
                     <button className={style['submit-btn']} type='submit'>{LoginTexts.next}</button>
                 </div>
                 <p className={style['rules']}>{LoginTexts.rules}</p>
-            <a href='/register'><p className={style['login']}><ArrowRightAltIcon/>{LoginTexts.loginText}</p></a>
+            <a href='/login'><p className={style['login']}><ArrowRightAltIcon/>{LoginTexts.loginText}</p></a>
         </div>
 </React.Fragment>
 )
