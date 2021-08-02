@@ -94,4 +94,18 @@
       right: 82px;
     }
   }
+  .toast-container{
+    *{
+      font-family: "tahoma" !important;
+
+    }
+    font-family: "anardoni";
+    .toast-message-container{
+      #toast-message{
+        .title{
+          font-family: "anardoni" !important;
+        }
+      }
+    }
+  }
 }

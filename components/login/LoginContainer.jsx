@@ -25,24 +25,32 @@ const LoginContainer = () => {
             }
         })
             .then((res) => {
-                toast.notify('با موفقیت انجام شد', {
+                toast.notify('ثبت نام شما با موفقیت انجام شد', {
                     duration: 3,
-                    type: "success"
+                    transition: 'Slide',
+                    type: "success",
+                    title : 'انجام شد'
                 })
             })
             .catch((error) => {
                 toast.notify(error, {
                     duration: 3,
-                    type: "error"
+                    transition: 'Slide',
+                    type: "error",
+                    title : 'خطا'
                 })
             })
     }
     function submit() {
         (userName === '' || password === '') ? toast.notify(LoginTexts.validation, {
-                duration: 3,
-                type: "error"
+                duration: 30,
+                type: "error",
+                color: 'black',
+                transition: 'Slide',
+                title : 'خطا'
             }) :
             submitAction();
+
     }
     return (
             <div className={style['login-container']}>
@@ -63,7 +71,7 @@ const LoginContainer = () => {
                 </div>
                 <p className={style['forgot-password']}>{LoginTexts.forgotPassword}</p>
                 <a href='/register'><p className={style['sign-up']}><ArrowRightAltIcon/>{LoginTexts.signUp}</p></a>
-                <ToastContainer align={"right"} position={"bottom"}/>
+                <ToastContainer   className={style['toast']} align={"right"} position={"bottom"}/>
             </div>
     )
 }
