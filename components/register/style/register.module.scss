@@ -2,6 +2,7 @@
 .register-container{
   box-shadow: 0 0 20px #0b0b0b;
   padding: 30px 30px 10px 30px;
+  font-family: anardoni;
   margin: 80px auto;
   background-color: $background;
   border-radius: 10px;
@@ -71,7 +72,7 @@
     svg{
       transform: rotate(180deg);
       position: absolute;
-      right: 108px;
+      right: 135px;
       top: -3px;
     }
   }

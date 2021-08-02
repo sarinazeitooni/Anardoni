@@ -12,5 +12,5 @@ const LoginTexts = {
     number : 'تلفن همراه',
     rules : 'با تکمیل فرآیند ثبت‌نام شما که قوانین استفاده را مطالعه کرده و قبول دارید.',
     loginText : 'انارآیدی دارید؟ وارد شوید'
-};
+}
 export default LoginTexts;

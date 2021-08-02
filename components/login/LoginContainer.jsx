@@ -4,7 +4,6 @@ import LoginTexts from "./texts/loginTexts";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import {toast, ToastContainer} from 'react-nextjs-toast'
 import axios from "axios";
-
 const LoginContainer = () => {
     const [userName, setUserName] = useState('');
     const [password, setpassword] = useState('');
@@ -14,7 +13,6 @@ const LoginContainer = () => {
             setItem(document.getElementById(id).value)
         }
     }
-
     function submitAction() {
         axios({
             method: 'post',
@@ -39,7 +37,6 @@ const LoginContainer = () => {
                 })
             })
     }
-
     function submit() {
         (userName === '' || password === '') ? toast.notify(LoginTexts.validation, {
                 duration: 3,
@@ -47,9 +44,7 @@ const LoginContainer = () => {
             }) :
             submitAction();
     }
-
     return (
-        <React.Fragment>
             <div className={style['login-container']}>
                 <div className={style['owl-pic']}>
                     <img src="https://anardoni.com/img/owl-login.png"/>
@@ -68,10 +63,8 @@ const LoginContainer = () => {
                 </div>
                 <p className={style['forgot-password']}>{LoginTexts.forgotPassword}</p>
                 <a href='/register'><p className={style['sign-up']}><ArrowRightAltIcon/>{LoginTexts.signUp}</p></a>
+                <ToastContainer align={"right"} position={"bottom"}/>
             </div>
-            <ToastContainer align={"right"} position={"bottom"}/>
-        </React.Fragment>
     )
 }
-
 export default LoginContainer;
