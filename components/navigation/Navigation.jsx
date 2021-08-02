@@ -6,12 +6,10 @@ import style from './scss/navigation.module.scss';
 import {useRouter} from 'next/router';
 import {useSelector, useDispatch} from "react-redux";
 import navigationAction from "../../redux/action/navigationAction";
-import useViewPort from "../../customHook/useDeviceDetect"
 
 import Data from './messages/data';
 
 function Navigation() {
-    const isMobile = useViewPort();
     const dispatch = useDispatch();
     const router = useRouter();
     const [navigationBtn, setNavigationBtn] = useState(style.items);

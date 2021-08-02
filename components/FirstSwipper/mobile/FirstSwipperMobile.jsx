@@ -14,7 +14,7 @@ function FirstSwipperMobile() {
             <div className={style['swiper-mobile-container']}>
                 <div className={style['header']}>
                     <h2 className={style['swiper-title']}>{messages.apps}</h2>
-                    <AccountCircleTwoToneIcon fontSize='large' className={style['user-icon']}/>
+                    <a href='/login'><AccountCircleTwoToneIcon fontSize='large' className={style['user-icon']}/></a>
                 </div>
             </div>
             <Swiper spaceBetween={1} slidesPerView={1}>

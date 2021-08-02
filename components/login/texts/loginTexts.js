@@ -4,6 +4,7 @@ const LoginTexts = {
     password : 'رمز عبور',
     login : 'ورود',
     forgotPassword : 'رمز خود را فراموش کرده اید؟',
-    signUp : 'ساخت انارآیدی'
+    signUp : 'ساخت انارآیدی',
+    validation : 'این فیلد نباید خالی باشد'
 };
 export default LoginTexts;

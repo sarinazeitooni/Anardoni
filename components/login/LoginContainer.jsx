@@ -1,12 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import style from './style/login.module.scss';
-import Navigation from "../navigation/Navigation";
 import LoginTexts from "./texts/loginTexts";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
-function LoginContainer() {
+import { toast, ToastContainer } from 'react-nextjs-toast'
+const LoginContainer=()=> {
+    const [userName , setUserName] = useState('');
+    const [password , setpassword] = useState('');
+    function validation(setItem , id){
+        if (typeof window === 'object') {
+            setItem(document.getElementById(id).value)
+        }
+    }
+    function submit(){
+        (userName === '' || password === '') && toast.notify(LoginTexts.validation,{
+            duration: 3,
+            type: "info"
+        });
+    }
     return (
         <React.Fragment>
-            <Navigation/>
             <div className={style['login-container']}>
                 <div className={style['owl-pic']}>
                     <img src="https://anardoni.com/img/owl-login.png"/>
@@ -15,13 +27,14 @@ function LoginContainer() {
                 </div>
                 <h2 className={style['title']}>{LoginTexts.title}</h2>
                 <div className={style['input-container']}>
-                    <input className={style['input']} type='text' placeholder={LoginTexts.user}/>
-                    <input className={style['input']} type='text' placeholder={LoginTexts.password}/>
-                    <button className={style['submit-btn']} type='submit'>{LoginTexts.login}</button>
+                    <input onChange={()=>{validation(setUserName , 'username')}} className={style['input']} id='username' type='text' placeholder={LoginTexts.user}/>
+                    <input onChange={()=>{validation(setpassword , "password")}} className={style['input']} id='password' type='text' placeholder={LoginTexts.password}/>
+                    <button onClick={submit} className={style['submit-btn']} type='submit'>{LoginTexts.login}</button>
                 </div>
                 <p className={style['forgot-password']}>{LoginTexts.forgotPassword}</p>
                 <p className={style['sign-up']}> <ArrowRightAltIcon/>{LoginTexts.signUp}</p>
             </div>
+            <ToastContainer align={"right"} position={"bottom"}/>
         </React.Fragment>
     )
 }

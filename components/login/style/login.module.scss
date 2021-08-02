@@ -39,6 +39,7 @@
   .input-container {
     margin-top: 50px;
     .input {
+      color: white;
       &:focus {
         transition: border .1s linear;
         border: 1px solid $submit;

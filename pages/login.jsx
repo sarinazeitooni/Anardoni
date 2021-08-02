@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import LoginContainer from "../components/login/LoginContainer";
-
-function Login() {
+import Navigation from "../components/navigation/Navigation";
+import MobileNavigation from "../components/navigation/mobile/MobileNavigation";
+import style from '../styles/login.module.scss';
+const Login=()=> {
     return (
-        <React.Fragment>
+        <Fragment>
+            <span className={style['browser']}>
+                <Navigation/>
+            </span>
+            <span className={style['mobile']}>
+                <MobileNavigation name={'mobile'}/>
+            </span>
             <LoginContainer/>
-        </React.Fragment>
+        </Fragment>
     )
 }
 

@@ -6,14 +6,14 @@ import CategoryTwoToneIcon from '@material-ui/icons/CategoryTwoTone';
 import messages from "../messages/messages";
 import style from './scss/navigation-mobile.module.scss';
 import { useRouter } from 'next/router';
-function MobileNavigation(){
+function MobileNavigation({name}){
     const router = useRouter();
     const [NavItemClass , SetNavItemClass] = useState('');
     useEffect(()=>{
         (router.pathname == '/') ? SetNavItemClass(style.selected) : SetNavItemClass('');
     },[router.pathname]);
     return(
-            <div className={style['navigation-mobile-container']}>
+            <div className={style['navigation-mobile-container']} key={name}>
                 <ul className={style['item-mobile-container']}>
                         <li className={style['item']}> {messages.search} <SearchTwoToneIcon/></li>
                         <li className={style['item']}>{messages.updates}  <WhatshotIcon/></li>
