@@ -50,7 +50,12 @@ const LoginContainer = () => {
                 title : 'خطا'
             }) :
             submitAction();
-
+        if (typeof window === 'object') {
+            let item = document.querySelector('#password');
+            let item2 = document.querySelector('#username');
+            item.value = '';
+            item2.value = '';
+        }
     }
     return (
             <div className={style['login-container']}>
