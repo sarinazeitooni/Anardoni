@@ -1,4 +1,7 @@
 import images from "../images/images";
+function createInformation(title, description) {
+    return {title, description};
+}
 let cardData = [
     {
         id: 0,
@@ -29,35 +32,16 @@ let cardData = [
         ],
         information: [
             {
-                color: "#007bff",
-                Title: 'فروشنده',
-                description: "امید آقاخانی",
+                color : "#007bff",
+                title : "فروشنده",
+                description: 'امید آقاخانی'
             },
-            {
-                Title: "سایز",
-                description: "۱۳.۷۷ مگابایت",
-            },
-            {
-                Title: "دسته بندی",
-                description: "آب و هوا",
-            },
-            {
-                Title: "سازگاری",
-                description: "iPhone",
-            },
-            {
-                Title: "محدوده سنی",
-                description: "4+",
-            },
-            {
-                Title: "نسخه",
-                description: "419",
-            },
-            {
-                Title: "قیمت",
-                description: "رایگان"
-            }
-
+            createInformation("سایز",'۱۳.۷۷ مگابایت'),
+            createInformation("دسته بندی",'آب و هوا'),
+            createInformation("سازگاری",'iPhone'),
+            createInformation("محدوده سنی",'4+'),
+            createInformation("نسخه",'419'),
+            createInformation("قیمت",'رایگان')
         ]
 
     },{
@@ -97,34 +81,16 @@ let cardData = [
         ],
         information: [
             {
-                color: "#007bff",
-                Title: 'فروشنده',
-                description: " رسانه تدبیر (شاتل)",
+                color : "#007bff",
+                title : "فروشنده",
+                description: 'رسانه تدبیر (شاتل)'
             },
-            {
-                Title: "سایز",
-                description: "۲۲.۸۸ مگابایت",
-            },
-            {
-                Title: "دسته بندی",
-                description: "سرگرمی",
-            },
-            {
-                Title: "سازگاری",
-                description: "iPhone",
-            },
-            {
-                Title: "محدوده سنی",
-                description: "4+",
-            },
-            {
-                Title: "نسخه",
-                description: "2.0.0.744",
-            },
-            {
-                Title: "قیمت",
-                description: "رایگان"
-            }
+            createInformation("سایز",'۲۲.۸۸ مگابایت'),
+            createInformation("دسته بندی",'سرگرمی'),
+            createInformation("سازگاری",'iPhone'),
+            createInformation("محدوده سنی",'4+'),
+            createInformation("نسخه",'2.0.0.744'),
+            createInformation("قیمت",'رایگان')
         ]
 
     },
@@ -166,34 +132,17 @@ let cardData = [
         information:
             [
                 {
-                    color: "#007bff",
-                    Title: 'فروشنده',
-                    description: " نو پوشان پارسی",
+                    color : "#007bff",
+                    title : "فروشنده",
+                    description: ' نو پوشان پارسی'
                 },
-                {
-                    Title: "سایز",
-                    description: "۶.۰۸ مگابایت",
-                },
-                {
-                    Title: "دسته بندی",
-                    description: "خرید",
-                },
-                {
-                    Title: "سازگاری",
-                    description: "iPhone",
-                },
-                {
-                    Title: "محدوده سنی",
-                    description: "4+",
-                },
-                {
-                    Title: "نسخه",
-                    description: "2.3.1",
-                },
-                {
-                    Title: "قیمت",
-                    description: "رایگان"
-                }
+                createInformation("سایز",'۶.۰۸ مگابایت'),
+                createInformation("دسته بندی",'خرید'),
+                createInformation("سازگاری",'iPhone'),
+                createInformation("محدوده سنی",'4+'),
+                createInformation("نسخه",'2.3.1'),
+                createInformation("قیمت",'رایگان')
+
             ]
     },
     {
@@ -233,36 +182,17 @@ let cardData = [
         ],
         information: [
             {
-                color: "#007bff",
-                Title: 'فروشنده',
-                description: " رسانه تدبیر (شاتل)",
+                color : "#007bff",
+                title : "فروشنده",
+                description: ' رسانه تدبیر (شاتل)'
             },
-            {
-                Title: "سایز",
-                description: "۲۲.۸۸ مگابایت",
-            },
-            {
-                Title: "دسته بندی",
-                description: "سرگرمی",
-            },
-            {
-                Title: "سازگاری",
-                description: "iPhone",
-            },
-            {
-                Title: "محدوده سنی",
-                description: "4+",
-            },
-            {
-                Title: "نسخه",
-                description: "2.0.0.744",
-            },
-            {
-                Title: "قیمت",
-                description: "رایگان"
-            }
+            createInformation("سایز",'۲۲.۸۸ مگابایت'),
+            createInformation("دسته بندی",'سرگرمی'),
+            createInformation("سازگاری",'iPhone'),
+            createInformation("محدوده سنی",'4+'),
+            createInformation("نسخه",'2.0.0.744'),
+            createInformation("قیمت",'رایگان')
         ]
-
     }
 
 ];

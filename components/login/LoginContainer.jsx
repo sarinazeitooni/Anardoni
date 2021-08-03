@@ -28,7 +28,7 @@ const LoginContainer = () => {
         draggable: true,
         progress: undefined
     }
-    function submitAction() {
+    function submitAction(){
         setButtonAbility(true);
         axios({
             method: 'post',

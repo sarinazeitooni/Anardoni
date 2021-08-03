@@ -1,73 +1,17 @@
 import images from "../images/images";
+function createData(id, title, subtitle, detail, url) {
+    return { id, title, subtitle, detail, url };
+}
 let SecondSwipperData = [
-    {
-        id:0,
-        title: "قشم زیبا",
-        subtitle :'پلتفرم جامع گردشگری',
-        detail: 'رایگان',
-        url: images.firstsmallcard
-    },
-    {
-        id:1,
-        title: "pilapia",
-        detail: 'رایگان',
-        subtitle: 'هرجا میخوای برو!',
-        url: images.secondsmallcard
-    },
-    {
-        id:2,
-        title: "بلیط یاب هواپیما",
-        detail: 'رایگان',
-        subtitle :'پلتفرم جامع گردشگری',
-        url: images.thirdsmallcard
-    },
-    {
-        id:3,
-        title: "قشم زیبا",
-        subtitle :'پلتفرم جامع گردشگری',
-        detail: 'رایگان',
-        url: images.firstsmallcard
-    },
-    {
-        id:4,
-        title: "pilapia",
-        detail: 'رایگان',
-        subtitle: 'هرجا میخوای برو!',
-        url: images.secondsmallcard
-    },
-    {
-        id:5,
-        title: "سپهر 360",
-        detail: 'رایگان',
-        subtitle: 'بلیط ارزان هواپیما',
-        url: images.sixthsmallcard
-    },
-    {
-        id:6,
-        title: "pilapia",
-        detail: 'رایگان',
-        subtitle: 'هرجا میخوای برو!',
-        url: images.secondsmallcard
-    },
-    {
-        id:7,
-        title: "سپهر 360",
-        detail: 'رایگان',
-        subtitle: 'بلیط ارزان هواپیما',
-        url: images.sixthsmallcard
-    },
-    {
-        id:8,
-        title: "pilapia",
-        detail: 'رایگان',
-        subtitle: 'هرجا میخوای برو!',
-        url: images.secondsmallcard
-    },{
-        id:9,
-        title: "سپهر 360",
-        detail: 'رایگان',
-        subtitle: 'بلیط ارزان هواپیما',
-        url: images.sixthsmallcard
-    },
+    createData(0,"قشم زیبا",'پلتفرم جامع گردشگری','رایگان',images.firstsmallcard),
+    createData(1,"pilapia",'هرجا میخوای برو!','رایگان',images.secondsmallcard),
+    createData(2,"بلیط یاب هواپیما",'پلتفرم جامع گردشگری','رایگان',images.thirdsmallcard),
+    createData(3,"قشم زیبا",'پلتفرم جامع گردشگری','رایگان',images.firstsmallcard),
+    createData(4,"pilapia",'هرجا میخوای برو!','رایگان',images.secondsmallcard),
+    createData(5,"سپهر 360",'بلیط ارزان هواپیما','رایگان',images.sixthsmallcard),
+    createData(6,"pilapia",'هرجا میخوای برو!','رایگان',images.secondsmallcard),
+    createData(7,"سپهر 360",'بلیط ارزان هواپیما','رایگان',images.sixthsmallcard),
+    createData(8,"pilapia",'هرجا میخوای برو!','رایگان',images.secondsmallcard),
+    createData(9,"سپهر 360",'بلیط ارزان هواپیما','رایگان',images.sixthsmallcard),
 ];
 export default SecondSwipperData;

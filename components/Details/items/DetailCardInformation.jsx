@@ -15,7 +15,7 @@ function DetailCardInformation({item}) {
                     return (
                         <div key={index}>
                             <div className={style.about}>
-                                <div className={style['info-title']}>{item.Title}</div>
+                                <div className={style['info-title']}>{item.title}</div>
                                 <span className={style['info-items']}
                                       style={{color: item.color}}>{item.description}</span>
                             </div>
