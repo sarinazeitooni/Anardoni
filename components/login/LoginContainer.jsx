@@ -18,7 +18,7 @@ const LoginContainer = () => {
 
     const options = {
         position: "bottom-right",
-        autoClose: 5000,
+        autoClose: 4000,
         progressClassName: style.progress,
         className: style.toast,
         hideProgressBar: false,
@@ -65,7 +65,7 @@ const LoginContainer = () => {
     }
 
     return (
-        <>
+        <React.Fragment>
             <div className={style['login-container']}>
                 <div className={style['owl-pic']}>
                     <img src="https://anardoni.com/img/owl-login.png"/>
@@ -74,20 +74,22 @@ const LoginContainer = () => {
                 </div>
                 <h2 className={style['title']}>{LoginTexts.title}</h2>
                 <div className={style['input-container']}>
-                    <input onChange={() => {
-                        validation(setUserName, 'username')
-                    }} className={style['input']} id='username' type='text' placeholder={LoginTexts.user}/>
-                    <input onChange={() => {
-                        validation(setpassword, "password")
-                    }} className={style['input']} id='password' type='password' placeholder={LoginTexts.password}/>
-                    <button disabled={buttonAbility} onClick={submit} className={style['submit-btn']}
-                            type='submit'>{LoginTexts.login}</button>
+                    <form>
+                        <input onChange={() => {
+                            validation(setUserName, 'username')
+                        }} className={style['input']} id='username' type='text' placeholder={LoginTexts.user}/>
+                        <input onChange={() => {
+                            validation(setpassword, "password")
+                        }} className={style['input']} id='password' autoComplete="on" type='password' placeholder={LoginTexts.password}/>
+                        <button disabled={buttonAbility} onClick={submit} className={style['submit-btn']}
+                                type='submit'>{LoginTexts.login}</button>
+                    </form>
                 </div>
                 <p className={style['forgot-password']}>{LoginTexts.forgotPassword}</p>
                 <a href='/register'><p className={style['sign-up']}><ArrowRightAltIcon/>{LoginTexts.signUp}</p></a>
             </div>
             <ToastContainer/>
-        </>
+        </React.Fragment>
     )
 }
 export default LoginContainer;
