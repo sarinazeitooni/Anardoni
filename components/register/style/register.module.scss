@@ -56,6 +56,10 @@
       display: block;
       font-family: anardoni;
       color: white;
+      &:disabled{
+        opacity: .65;
+        cursor: default;
+      }
     }
   }
   .rules {

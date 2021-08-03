@@ -3,9 +3,11 @@ import LoginContainer from "../components/login/LoginContainer";
 import Navigation from "../components/navigation/Navigation";
 import MobileNavigation from "../components/navigation/mobile/MobileNavigation";
 import style from '../styles/login.module.scss';
+import FeedBack from "../components/feedback/feedback";
 const Login=()=> {
     return (
         <Fragment>
+            <FeedBack/>
             <span className={style['browser']}>
                 <Navigation/>
             </span>

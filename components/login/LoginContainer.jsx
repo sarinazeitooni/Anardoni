@@ -4,7 +4,7 @@ import LoginTexts from "./texts/loginTexts";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import {ToastContainer, toast} from 'react-toastify';
 import axios from "axios";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import LoginAction from "../../redux/action/loginAction";
 
 const LoginContainer = () => {
@@ -12,13 +12,11 @@ const LoginContainer = () => {
     const [password, setpassword] = useState('');
     const [buttonAbility, setButtonAbility] = useState(false);
     const dispatch = useDispatch();
-    const userData = useSelector(state => state.userData);
     function validation(setItem, id) {
         if (typeof window === 'object') {
             setItem(document.getElementById(id).value)
         }
     }
-
     const options = {
         position: "bottom-right",
         autoClose: 4000,
@@ -30,7 +28,6 @@ const LoginContainer = () => {
         draggable: true,
         progress: undefined
     }
-
     function submitAction() {
         setButtonAbility(true);
         axios({
@@ -54,7 +51,6 @@ const LoginContainer = () => {
                 toast('خطا', options);
             })
     }
-
     function submit() {
         (userName === '' || password === '') ? toast('لطفا فیلد ها را تکمیل کنید', options) :
             submitAction();
@@ -67,7 +63,6 @@ const LoginContainer = () => {
             setUserName('');
         }
     }
-
     return (
         <React.Fragment>
             <div className={style['login-container']}>
@@ -84,7 +79,8 @@ const LoginContainer = () => {
                         }} className={style['input']} id='username' type='text' placeholder={LoginTexts.user}/>
                         <input onChange={() => {
                             validation(setpassword, "password")
-                        }} className={style['input']} id='password' autoComplete="on" type='password' placeholder={LoginTexts.password}/>
+                        }} className={style['input']} id='password' autoComplete="on" type='password'
+                               placeholder={LoginTexts.password}/>
                         <button disabled={buttonAbility} onClick={submit} className={style['submit-btn']}
                                 type='submit'>{LoginTexts.login}</button>
                     </form>
