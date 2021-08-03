@@ -8,6 +8,7 @@ import axios from "axios";
 const LoginContainer = () => {
     const [userName, setUserName] = useState('');
     const [password, setpassword] = useState('');
+    const [buttonAbility, setButtonAbility] = useState(false);
 
     function validation(setItem, id) {
         if (typeof window === 'object') {
@@ -18,7 +19,7 @@ const LoginContainer = () => {
     const options = {
         position: "bottom-right",
         autoClose: 5000,
-        progressClassName : style.progress,
+        progressClassName: style.progress,
         className: style.toast,
         hideProgressBar: false,
         closeOnClick: true,
@@ -26,7 +27,9 @@ const LoginContainer = () => {
         draggable: true,
         progress: undefined
     }
+
     function submitAction() {
+        setButtonAbility(true);
         axios({
             method: 'post',
             url: 'https://reqres.in/api/login/data',
@@ -38,6 +41,7 @@ const LoginContainer = () => {
             }
         })
             .then((res) => {
+                setButtonAbility(false)
                 toast('با موفقیت انجام شد',
                     options
                 );
@@ -75,8 +79,9 @@ const LoginContainer = () => {
                     }} className={style['input']} id='username' type='text' placeholder={LoginTexts.user}/>
                     <input onChange={() => {
                         validation(setpassword, "password")
-                    }} className={style['input']} id='password' type='text' placeholder={LoginTexts.password}/>
-                    <button onClick={submit} className={style['submit-btn']} type='submit'>{LoginTexts.login}</button>
+                    }} className={style['input']} id='password' type='password' placeholder={LoginTexts.password}/>
+                    <button disabled={buttonAbility} onClick={submit} className={style['submit-btn']}
+                            type='submit'>{LoginTexts.login}</button>
                 </div>
                 <p className={style['forgot-password']}>{LoginTexts.forgotPassword}</p>
                 <a href='/register'><p className={style['sign-up']}><ArrowRightAltIcon/>{LoginTexts.signUp}</p></a>
