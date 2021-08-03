@@ -4,12 +4,15 @@ import LoginTexts from "./texts/loginTexts";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import {ToastContainer, toast} from 'react-toastify';
 import axios from "axios";
+import {useDispatch, useSelector} from "react-redux";
+import LoginAction from "../../redux/action/loginAction";
 
 const LoginContainer = () => {
     const [userName, setUserName] = useState('');
     const [password, setpassword] = useState('');
     const [buttonAbility, setButtonAbility] = useState(false);
-
+    const dispatch = useDispatch();
+    const userData = useSelector(state => state.userData);
     function validation(setItem, id) {
         if (typeof window === 'object') {
             setItem(document.getElementById(id).value)
@@ -41,7 +44,8 @@ const LoginContainer = () => {
             }
         })
             .then((res) => {
-                setButtonAbility(false)
+                setButtonAbility(false);
+                dispatch(LoginAction(res.data));
                 toast('با موفقیت انجام شد',
                     options
                 );

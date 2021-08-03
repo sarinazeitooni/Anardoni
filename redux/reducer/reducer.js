@@ -2,7 +2,8 @@ import SecondSwipperData from "../../data/SecondSwipperData";
 const initialState ={
     swipper : null,
     btnValue : true,
-    navigationBtn : ''
+    navigationBtn : '',
+    userData : []
 }
 function reducer(state=initialState, action) {
     switch (action.type) {
@@ -21,6 +22,11 @@ function reducer(state=initialState, action) {
                 ...state,
                 navigationBtn: action.payload
             }
+        case 'login':
+            return {
+                ...state,
+                userData : [...state.userData, action.payload]
+            };
         default:
             return state;
     }
