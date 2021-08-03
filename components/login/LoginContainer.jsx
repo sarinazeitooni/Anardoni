@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import style from './style/login.module.scss';
 import LoginTexts from "./texts/loginTexts";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
-import {toast, ToastContainer} from 'react-nextjs-toast'
+import {ToastContainer, toast} from 'react-toastify';
 import axios from "axios";
+
 const LoginContainer = () => {
     const [userName, setUserName] = useState('');
     const [password, setpassword] = useState('');
@@ -12,6 +13,18 @@ const LoginContainer = () => {
         if (typeof window === 'object') {
             setItem(document.getElementById(id).value)
         }
+    }
+
+    const options = {
+        position: "bottom-right",
+        autoClose: 5000,
+        progressClassName : style.progress,
+        className: style.toast,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined
     }
     function submitAction() {
         axios({
@@ -25,39 +38,30 @@ const LoginContainer = () => {
             }
         })
             .then((res) => {
-                toast.notify('ثبت نام شما با موفقیت انجام شد', {
-                    duration: 3,
-                    transition: 'Slide',
-                    type: "success",
-                    title : 'انجام شد'
-                })
+                toast('با موفقیت انجام شد',
+                    options
+                );
             })
             .catch((error) => {
-                toast.notify(error, {
-                    duration: 3,
-                    transition: 'Slide',
-                    type: "error",
-                    title : 'خطا'
-                })
+                toast('خطا', options);
             })
     }
+
     function submit() {
-        (userName === '' || password === '') ? toast.notify(LoginTexts.validation, {
-                duration: 30,
-                type: "error",
-                color: 'black',
-                transition: 'Slide',
-                title : 'خطا'
-            }) :
+        (userName === '' || password === '') ? toast('لطفا فیلد ها را تکمیل کنید', options) :
             submitAction();
         if (typeof window === 'object') {
             let item = document.querySelector('#password');
             let item2 = document.querySelector('#username');
             item.value = '';
             item2.value = '';
+            setpassword('');
+            setUserName('');
         }
     }
+
     return (
+        <>
             <div className={style['login-container']}>
                 <div className={style['owl-pic']}>
                     <img src="https://anardoni.com/img/owl-login.png"/>
@@ -76,8 +80,9 @@ const LoginContainer = () => {
                 </div>
                 <p className={style['forgot-password']}>{LoginTexts.forgotPassword}</p>
                 <a href='/register'><p className={style['sign-up']}><ArrowRightAltIcon/>{LoginTexts.signUp}</p></a>
-                <ToastContainer   className={style['toast']} align={"right"} position={"bottom"}/>
             </div>
+            <ToastContainer/>
+        </>
     )
 }
 export default LoginContainer;

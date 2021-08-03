@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import 'swiper/swiper.scss';
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/variables.scss';
 import {Provider} from "react-redux";
 import store from "../redux/store/store";

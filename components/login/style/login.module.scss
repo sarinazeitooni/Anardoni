@@ -94,18 +94,15 @@
       right: 82px;
     }
   }
-  .toast-container{
-    *{
-      font-family: "tahoma" !important;
-
-    }
-    font-family: "anardoni";
-    .toast-message-container{
-      #toast-message{
-        .title{
-          font-family: "anardoni" !important;
-        }
-      }
-    }
-  }
 }
+.progress{
+  background: $card-subtitle;
+}
+.toast {
+  font-size: 13px;
+  font-family: anardoni;
+  background-color: $color-text;
+  color: white;
+  direction: rtl;
+}
+
