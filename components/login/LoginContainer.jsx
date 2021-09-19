@@ -51,7 +51,7 @@ const LoginContainer = () => {
                 toast('خطا', options);
             })
     }
-    function submit() {
+    function submit(e) {
         (userName === '' || password === '') ? toast('لطفا فیلد ها را تکمیل کنید', options) :
             submitAction();
         if (typeof window === 'object') {

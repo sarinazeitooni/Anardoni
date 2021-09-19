@@ -1,7 +1,8 @@
 .main-image-skeleton,.caption-skeleton,.title-skeleton-container, .swiper-skeleton-container,.swipper-skeleton-title{
   width: fit-content;
   margin: 10px auto;
-}.title-skeleton-container{
+}
+.title-skeleton-container{
   direction: rtl;
   display: flex;
   flex-direction: row;

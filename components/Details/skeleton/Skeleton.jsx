@@ -1,7 +1,6 @@
 import React from 'react';
 import {Skeleton} from '@material-ui/lab';
 import style from './scss/detail-skeleton.module.scss';
-
 function DetailSkeleton() {
     const wave = new Array(3);
     return (

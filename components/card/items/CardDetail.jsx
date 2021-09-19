@@ -2,7 +2,7 @@ import React from "react";
 import style from '../scss/card-detail.module.scss';
 import Image from 'next/image';
 
-const CardDetail = ({detailImage, title, subTitle, id}) => {
+const CardDetail = ({detailImage, title, subTitle}) => {
     return (
         <div className={style['card-detail-container']}>
             <div className={style['card-detail-text']}>

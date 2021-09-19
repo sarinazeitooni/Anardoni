@@ -7,7 +7,6 @@ import MobileNewItems from "./mobileItems/MobileNewItems";
 import MobileDetailDescription from "./mobileItems/MobileDetailDescription";
 import MobileDetailLinks from "./mobileItems/MobileDetailLinks";
 import MobileDetailInformation from "./mobileItems/MobileDetailInformation";
-
 function MobileDetail({card}) {
     return (
         <React.Fragment>

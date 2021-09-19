@@ -5,7 +5,7 @@ import CardDetail from "./items/CardDetail";
 const Card = ({id, containerImage, detailImage, title, subTitle}) => {
     return (
         <CardContainer containerImage={containerImage}>
-            <CardDetail id={id} title={title} subTitle={subTitle} detailImage={detailImage}/>
+            <CardDetail title={title} subTitle={subTitle} detailImage={detailImage}/>
         </CardContainer>
     )
 }

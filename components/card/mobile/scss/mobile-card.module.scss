@@ -1,26 +1,21 @@
 @import './styles/variables';
-
 .mobile-card-container {
   color: white;
   font-family: $font;
   width: 91%;
   margin: 0 auto;
-
   .titles-container {
     text-align: right;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-
     .titles {
       direction: rtl;
       margin: 0 6px;
       width: 66.5%;
-
       .title {
         font-size: 13.5px;
       }
-
       .subtitle {
         color: $card-subtitle;
         font-size: 12px;
@@ -31,7 +26,6 @@
         width: 155px;
       }
     }
-
     .get-button {
       height: 26px;
       margin: 10px 5px;
@@ -42,7 +36,6 @@
       padding: 2px 13px;
     }
   }
-
   .main-image {
     border-radius: 5px;
     width: 100%;
